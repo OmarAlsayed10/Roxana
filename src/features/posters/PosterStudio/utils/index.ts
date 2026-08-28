@@ -1,0 +1,1 @@
+export { capturePoster } from './capturePoster'

@@ -26,6 +26,7 @@ export const HeroScenes = ({ language }: { language: Language }) => {
             size={active.sizes[0]}
             accent={familyHex[active.family]}
             label={active.label ? assetPath(active.label) : null}
+            labelOffset={active.labelOffset}
             language={language}
             viewScale={active.viewScale}
             spin={sceneProgress(progress, products.length, activeIndex) * Math.PI * 2 * turnsPerScene}

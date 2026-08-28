@@ -19,6 +19,7 @@ export type Product = {
   use: ProductUse
   finish: BilingualText
   label: string | null
+  labelOffset: number
   sizes: BucketSize[]
   viewScale: number
   room: number

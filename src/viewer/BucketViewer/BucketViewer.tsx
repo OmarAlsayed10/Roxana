@@ -12,6 +12,7 @@ type BucketViewerProps = {
   size: BucketSize
   accent: string
   label?: string | null
+  labelOffset?: number
   language: Language
   viewScale?: number
   autoRotate?: boolean
@@ -25,6 +26,7 @@ export const BucketViewer = ({
   size,
   accent,
   label = null,
+  labelOffset = 0,
   language,
   viewScale = 1,
   autoRotate = true,
@@ -50,6 +52,7 @@ export const BucketViewer = ({
               size={size}
               accent={accent}
               label={label}
+              labelOffset={labelOffset}
               viewScale={viewScale}
               autoRotate={autoRotate}
               spin={spin}

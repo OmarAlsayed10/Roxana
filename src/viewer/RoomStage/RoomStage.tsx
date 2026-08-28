@@ -12,6 +12,7 @@ type RoomStageProps = {
   size: BucketSize
   accent: string
   label: string | null
+  labelOffset: number
   viewScale: number
   autoRotate: boolean
   spin: number
@@ -19,7 +20,7 @@ type RoomStageProps = {
   activeRoom: number
 }
 
-export const RoomStage = ({ size, accent, label, viewScale, autoRotate, spin, rooms, activeRoom }: RoomStageProps) => {
+export const RoomStage = ({ size, accent, label, labelOffset, viewScale, autoRotate, spin, rooms, activeRoom }: RoomStageProps) => {
   const [isRotating, setIsRotating] = useState(autoRotate)
   const resumeTimer = useRef<number | undefined>(undefined)
   const height = bucketProfiles[size].height * millimetre
@@ -53,7 +54,7 @@ export const RoomStage = ({ size, accent, label, viewScale, autoRotate, spin, ro
       >
         <Suspense fallback={null}>
           <RoomEnvironments rooms={rooms} activeRoom={activeRoom} />
-          <PaintBucket size={size} accent={accent} label={label} spin={spin} />
+          <PaintBucket size={size} accent={accent} label={label} labelOffset={labelOffset} spin={spin} />
         </Suspense>
         <OrbitRig
           target={[0, height * stageSettings.targetHeightFactor, 0]}

@@ -16,44 +16,44 @@
     "ar": "بويات مصنوعة عشان تفضل"
   },
   "heroSubline": {
-    "en": "Placeholder copy. Interior and exterior wall paints, putty and adhesives, produced in Egypt.",
-    "ar": "نص مؤقت. بويات داخلية وخارجية، معجون، وغراء، إنتاج مصرى."
+    "en": "",
+    "ar": ""
   },
   "intro": {
-    "en": "Placeholder copy. This paragraph will carry the company introduction once the final text is provided.",
-    "ar": "نص مؤقت. هذه الفقرة ستحمل تعريف الشركة عند استلام النص النهائى."
+    "en": "",
+    "ar": ""
   },
   "story": {
-    "en": "Placeholder copy. This section will carry the company history, the factory, and the production process once the final text is provided.",
-    "ar": "نص مؤقت. هذا القسم سيحمل تاريخ الشركة والمصنع وخطوات الإنتاج عند استلام النص النهائى."
+    "en": "",
+    "ar": ""
   },
   "claims": [
     {
       "value": "—",
       "label": {
-        "en": "Placeholder claim",
-        "ar": "بيان مؤقت"
+        "en": "",
+        "ar": ""
       }
     },
     {
       "value": "—",
       "label": {
-        "en": "Placeholder claim",
-        "ar": "بيان مؤقت"
+        "en": "",
+        "ar": ""
       }
     },
     {
       "value": "—",
       "label": {
-        "en": "Placeholder claim",
-        "ar": "بيان مؤقت"
+        "en": "",
+        "ar": ""
       }
     },
     {
       "value": "—",
       "label": {
-        "en": "Placeholder claim",
-        "ar": "بيان مؤقت"
+        "en": "",
+        "ar": ""
       }
     }
   ],
@@ -65,8 +65,8 @@
         "ar": "حوائط داخلية"
       },
       "body": {
-        "en": "Placeholder copy for interior surfaces.",
-        "ar": "نص مؤقت للأسطح الداخلية."
+        "en": "",
+        "ar": ""
       }
     },
     {
@@ -76,8 +76,8 @@
         "ar": "حوائط خارجية"
       },
       "body": {
-        "en": "Placeholder copy for exterior surfaces.",
-        "ar": "نص مؤقت للأسطح الخارجية."
+        "en": "",
+        "ar": ""
       }
     },
     {
@@ -87,8 +87,8 @@
         "ar": "معجون وتجهيز"
       },
       "body": {
-        "en": "Placeholder copy for surface preparation.",
-        "ar": "نص مؤقت لتجهيز الأسطح."
+        "en": "",
+        "ar": ""
       }
     },
     {
@@ -98,8 +98,8 @@
         "ar": "غراء"
       },
       "body": {
-        "en": "Placeholder copy for adhesive products.",
-        "ar": "نص مؤقت لمنتجات الغراء."
+        "en": "",
+        "ar": ""
       }
     }
   ]

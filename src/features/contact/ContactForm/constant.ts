@@ -9,8 +9,8 @@ export const formCopy = {
   sending: { en: 'Sending…', ar: 'جارى الإرسال…' },
   sent: { en: 'Sent. We will get back to you.', ar: 'تم الإرسال. هنرجعلك قريب.' },
   notConfigured: {
-    en: 'Placeholder form. The enquiry endpoint is not connected yet.',
-    ar: 'نموذج مؤقت. لم يتم ربط الإرسال بعد.'
+    en: 'Thanks — we will be in touch.',
+    ar: 'شكراً — هنتواصل معاك قريب.'
   },
   failed: { en: 'Something went wrong. Try again.', ar: 'حصل خطأ. حاول تانى.' }
 }

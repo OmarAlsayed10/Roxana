@@ -1,12 +1,21 @@
 {
-  "headline": { "en": "Talk to us", "ar": "كلمنا" },
+  "headline": {
+    "en": "Talk to us",
+    "ar": "كلمنا"
+  },
   "body": {
-    "en": "Placeholder copy. Send an enquiry about products, pricing, or becoming a distributor.",
-    "ar": "نص مؤقت. ابعتلنا استفسارك عن المنتجات أو الأسعار أو التوزيع."
+    "en": "",
+    "ar": ""
   },
   "phone": "",
   "whatsapp": "",
   "email": "",
-  "address": { "en": "", "ar": "" },
-  "hours": { "en": "", "ar": "" }
+  "address": {
+    "en": "",
+    "ar": ""
+  },
+  "hours": {
+    "en": "",
+    "ar": ""
+  }
 }

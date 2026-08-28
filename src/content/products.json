@@ -14,10 +14,11 @@
       "ar": "بلاستيك قابل للغسيل"
     },
     "label": "labels/lg-8000.webp",
+    "labelOffset": 0.375,
     "sizes": [
       "2.5L"
     ],
-    "viewScale": 1.0,
+    "viewScale": 1.3,
     "room": 0,
     "specs": {
       "coverage": {
@@ -79,10 +80,11 @@
       "ar": "بلاستيك قابل للغسيل"
     },
     "label": "labels/lg-800.webp",
+    "labelOffset": 0.375,
     "sizes": [
       "9L"
     ],
-    "viewScale": 1.0,
+    "viewScale": 1.3,
     "room": 1,
     "specs": {
       "coverage": {
@@ -140,10 +142,11 @@
       "ar": "بلاستيك قابل للغسيل"
     },
     "label": "labels/gold-600.webp",
+    "labelOffset": 0.375,
     "sizes": [
       "9L"
     ],
-    "viewScale": 1.0,
+    "viewScale": 1.3,
     "room": 2,
     "specs": {
       "coverage": {
@@ -201,10 +204,11 @@
       "ar": "إيمولشن بلاستيك قابل للغسيل"
     },
     "label": "labels/exo-900.webp",
+    "labelOffset": 0.375,
     "sizes": [
       "9L"
     ],
-    "viewScale": 1.0,
+    "viewScale": 1.3,
     "room": 0,
     "specs": {
       "coverage": {
@@ -262,10 +266,11 @@
       "ar": "بلاستيك مط مقاوم للغسيل"
     },
     "label": "labels/top-plastic-turkish.webp",
+    "labelOffset": 0.045,
     "sizes": [
       "13kg"
     ],
-    "viewScale": 1.0,
+    "viewScale": 1.3,
     "room": 1,
     "specs": {
       "coverage": {
@@ -327,10 +332,11 @@
       "ar": "سيلر مائى"
     },
     "label": "labels/lg-water-sealer.webp",
+    "labelOffset": 0.375,
     "sizes": [
       "3kg"
     ],
-    "viewScale": 1.0,
+    "viewScale": 1.3,
     "room": 2,
     "specs": {
       "coverage": {
@@ -388,10 +394,11 @@
       "ar": "سيلر مائى"
     },
     "label": "labels/top-sealer-turkish.webp",
+    "labelOffset": 0.045,
     "sizes": [
       "3kg"
     ],
-    "viewScale": 1.0,
+    "viewScale": 1.3,
     "room": 0,
     "specs": {
       "coverage": {

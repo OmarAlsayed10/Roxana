@@ -17,7 +17,7 @@ export const AboutPage = ({ language }: SiteControls) => (
       <p {...AboutPageTokens.story}>{company.story[language]}</p>
       <aside {...AboutPageTokens.aside}>
         <SectionLabel>{claimsLabel[language]}</SectionLabel>
-        {company.claims.map((claim, index) => (
+        {company.claims.filter((claim) => claim.label[language]).map((claim, index) => (
           <div key={index} {...AboutPageTokens.asideRow}>
             <p {...AboutPageTokens.asideLabel}>{claim.label[language]}</p>
             <p {...AboutPageTokens.asideValue}>{claim.value}</p>

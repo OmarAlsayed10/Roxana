@@ -3,7 +3,8 @@ export const siteRoutes = {
   products: '/products',
   productDetail: '/products/:slug',
   about: '/about',
-  contact: '/contact'
+  contact: '/contact',
+  posterStudio: '/poster-studio'
 }
 
 export const productPath = (slug: string) => `/products/${slug}`

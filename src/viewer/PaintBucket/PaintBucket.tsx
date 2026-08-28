@@ -11,10 +11,11 @@ type PaintBucketProps = {
   size: BucketSize
   accent: string
   label: string | null
+  labelOffset: number
   spin: number
 }
 
-export const PaintBucket = ({ size, accent, label, spin }: PaintBucketProps) => {
+export const PaintBucket = ({ size, accent, label, labelOffset, spin }: PaintBucketProps) => {
   const profile = bucketProfiles[size]
   const { bodyPoints, lidPoints, metrics } = useMemo(
     () => ({
@@ -35,7 +36,7 @@ export const PaintBucket = ({ size, accent, label, spin }: PaintBucketProps) => 
       </mesh>
 
       {label ? (
-        <LabelBand url={label} height={height} topRadius={topRadius} bottomRadius={bottomRadius} />
+        <LabelBand url={label} offset={labelOffset} height={height} topRadius={topRadius} bottomRadius={bottomRadius} />
       ) : (
         <ColourBand accent={accent} height={height} topRadius={topRadius} bottomRadius={bottomRadius} />
       )}

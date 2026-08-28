@@ -2,7 +2,6 @@ export const latheSegments = 96
 export const surfaceSkin = 0.0012
 export const handleTubeFactor = 0.019
 export const labelAnisotropy = 8
-export const labelSeamOffset = 0.5
 export const labelBottom = 0.05
 export const labelCoverage = 0.86
 

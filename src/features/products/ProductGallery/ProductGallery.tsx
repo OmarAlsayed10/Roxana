@@ -16,6 +16,7 @@ export const ProductGallery = ({ product, language }: ProductGalleryProps) => (
         size={product.sizes[0]}
         accent={familyHex[product.family]}
         label={product.label ? assetPath(product.label) : null}
+            labelOffset={product.labelOffset}
         language={language}
         viewScale={product.viewScale}
         rooms={[roomFiles[product.room] ?? roomFiles[0]]}

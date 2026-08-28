@@ -1,23 +1,24 @@
 import { useMemo } from 'react'
 import { useTexture } from '@react-three/drei'
 import { RepeatWrapping, SRGBColorSpace } from 'three'
-import { bandMaterial, labelAnisotropy, labelBottom, labelCoverage, labelSeamOffset, latheSegments, surfaceSkin } from './constant'
+import { bandMaterial, labelAnisotropy, labelBottom, labelCoverage, latheSegments, surfaceSkin } from './constant'
 
 type LabelBandProps = {
   url: string
+  offset: number
   height: number
   topRadius: number
   bottomRadius: number
 }
 
-export const LabelBand = ({ url, height, topRadius, bottomRadius }: LabelBandProps) => {
+export const LabelBand = ({ url, offset, height, topRadius, bottomRadius }: LabelBandProps) => {
   const texture = useTexture(url)
 
   const band = useMemo(() => {
     texture.colorSpace = SRGBColorSpace
     texture.anisotropy = labelAnisotropy
     texture.wrapS = RepeatWrapping
-    texture.offset.x = labelSeamOffset
+    texture.offset.x = offset
     texture.needsUpdate = true
 
     const bottom = height * labelBottom
@@ -30,7 +31,7 @@ export const LabelBand = ({ url, height, topRadius, bottomRadius }: LabelBandPro
       radiusTop: radiusAt(bottom + wrapHeight) + surfaceSkin,
       radiusBottom: radiusAt(bottom) + surfaceSkin
     }
-  }, [texture, height, topRadius, bottomRadius])
+  }, [texture, offset, height, topRadius, bottomRadius])
 
   return (
     <mesh position={[0, band.centre, 0]} castShadow>

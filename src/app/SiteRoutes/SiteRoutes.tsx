@@ -3,6 +3,7 @@ import { Route, Routes, useLocation } from 'react-router'
 import { AboutPage } from '../../features/about'
 import { ContactPage } from '../../features/contact'
 import { HomePage } from '../../features/home'
+import { PosterStudio } from '../../features/posters'
 import { ProductDetailPage, ProductsPage } from '../../features/products'
 import type { SiteControls } from '../../shared/types'
 import { siteRoutes } from './constant'
@@ -22,6 +23,7 @@ export const SiteRoutes = (siteControls: SiteControls) => (
       <Route path={siteRoutes.productDetail} element={<ProductDetailPage {...siteControls} />} />
       <Route path={siteRoutes.about} element={<AboutPage {...siteControls} />} />
       <Route path={siteRoutes.contact} element={<ContactPage {...siteControls} />} />
+      {import.meta.env.DEV && <Route path={siteRoutes.posterStudio} element={<PosterStudio />} />}
       <Route path="*" element={<ProductsPage {...siteControls} />} />
     </Routes>
   </>
