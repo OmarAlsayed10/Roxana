@@ -1,0 +1,168 @@
+{
+  "name": {
+    "en": "Roxana Paints",
+    "ar": "روكسانا للبويات"
+  },
+  "legalName": {
+    "en": "Roxana for Paints and Chemical Industries",
+    "ar": "شركة روكسانا للبويات والصناعات الكيماوية"
+  },
+  "tagline": {
+    "en": "Colour that carries your story",
+    "ar": "لمسة ألوان تدي روح لبيتك"
+  },
+  "heroHeadline": {
+    "en": "Paint made to last",
+    "ar": "بويات مصنوعة عشان تفضل"
+  },
+  "heroSubline": {
+    "en": "Placeholder copy. Interior and exterior wall paints, putty and adhesives, produced in Egypt.",
+    "ar": "نص مؤقت. بويات داخلية وخارجية، معجون، وغراء، إنتاج مصرى."
+  },
+  "intro": {
+    "en": "Placeholder copy. This paragraph will carry the company introduction once the final text is provided.",
+    "ar": "نص مؤقت. هذه الفقرة ستحمل تعريف الشركة عند استلام النص النهائى."
+  },
+  "story": {
+    "en": "Placeholder copy. This section will carry the company history, the factory, and the production process once the final text is provided.",
+    "ar": "نص مؤقت. هذا القسم سيحمل تاريخ الشركة والمصنع وخطوات الإنتاج عند استلام النص النهائى."
+  },
+  "scenes": [
+    {
+      "key": "range",
+      "viewScale": 1.45,
+      "eyebrow": {
+        "en": "01 — The range",
+        "ar": "01 — المجموعة"
+      },
+      "title": {
+        "en": "A finish for every wall",
+        "ar": "لكل حائط لمسة نهائية"
+      },
+      "body": {
+        "en": "Placeholder copy. This scene introduces the product families and where each one belongs.",
+        "ar": "نص مؤقت. هذا المشهد يعرّف مجموعات المنتجات ومكان استخدام كل واحدة."
+      },
+      "cta": {
+        "en": "Browse products",
+        "ar": "تصفح المنتجات"
+      }
+    },
+    {
+      "key": "made",
+      "viewScale": 1.45,
+      "eyebrow": {
+        "en": "02 — Made here",
+        "ar": "02 — صناعة مصرية"
+      },
+      "title": {
+        "en": "Mixed in our own plant",
+        "ar": "بيتخلط فى مصنعنا"
+      },
+      "body": {
+        "en": "Placeholder copy. This scene describes production and the raw materials behind every batch.",
+        "ar": "نص مؤقت. هذا المشهد يوضح خطوات الإنتاج والخامات وراء كل تشغيلة."
+      },
+      "cta": {
+        "en": "About Roxana",
+        "ar": "عن روكسانا"
+      }
+    },
+    {
+      "key": "reach",
+      "viewScale": 1.45,
+      "eyebrow": {
+        "en": "03 — On site",
+        "ar": "03 — فى الموقع"
+      },
+      "title": {
+        "en": "From the plant to your wall",
+        "ar": "من المصنع لحيطتك"
+      },
+      "body": {
+        "en": "Placeholder copy. This scene covers distribution, pack sizes, and how to order.",
+        "ar": "نص مؤقت. هذا المشهد يغطى التوزيع وأحجام العبوات وطريقة الطلب."
+      },
+      "cta": {
+        "en": "Talk to us",
+        "ar": "كلمنا"
+      }
+    }
+  ],
+  "claims": [
+    {
+      "value": "—",
+      "label": {
+        "en": "Placeholder claim",
+        "ar": "بيان مؤقت"
+      }
+    },
+    {
+      "value": "—",
+      "label": {
+        "en": "Placeholder claim",
+        "ar": "بيان مؤقت"
+      }
+    },
+    {
+      "value": "—",
+      "label": {
+        "en": "Placeholder claim",
+        "ar": "بيان مؤقت"
+      }
+    },
+    {
+      "value": "—",
+      "label": {
+        "en": "Placeholder claim",
+        "ar": "بيان مؤقت"
+      }
+    }
+  ],
+  "useCases": [
+    {
+      "key": "interior",
+      "title": {
+        "en": "Interior walls",
+        "ar": "حوائط داخلية"
+      },
+      "body": {
+        "en": "Placeholder copy for interior surfaces.",
+        "ar": "نص مؤقت للأسطح الداخلية."
+      }
+    },
+    {
+      "key": "exterior",
+      "title": {
+        "en": "Exterior walls",
+        "ar": "حوائط خارجية"
+      },
+      "body": {
+        "en": "Placeholder copy for exterior surfaces.",
+        "ar": "نص مؤقت للأسطح الخارجية."
+      }
+    },
+    {
+      "key": "prep",
+      "title": {
+        "en": "Putty and preparation",
+        "ar": "معجون وتجهيز"
+      },
+      "body": {
+        "en": "Placeholder copy for surface preparation.",
+        "ar": "نص مؤقت لتجهيز الأسطح."
+      }
+    },
+    {
+      "key": "adhesive",
+      "title": {
+        "en": "Adhesives",
+        "ar": "غراء"
+      },
+      "body": {
+        "en": "Placeholder copy for adhesive products.",
+        "ar": "نص مؤقت لمنتجات الغراء."
+      }
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+export { ViewerPoster } from './ViewerPoster'

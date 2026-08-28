@@ -1,0 +1,191 @@
+[
+  {
+    "slug": "lg-8000",
+    "name": {
+      "en": "LG 8000",
+      "ar": "ال جى 8000"
+    },
+    "family": "lg",
+    "form": "bucket",
+    "code": "8000",
+    "use": "both",
+    "finish": {
+      "en": "Washable plastic",
+      "ar": "بلاستيك قابل للغسيل"
+    },
+    "label": null,
+    "sizes": [
+      "3kg",
+      "9kg",
+      "20kg"
+    ],
+    "viewScale": 1.45,
+    "room": 0,
+    "specs": {
+      "coverage": {
+        "en": "Placeholder — 8 to 10 m² per kg per coat",
+        "ar": "نص مؤقت — من 8 إلى 10 متر مربع للكيلو للوجه الواحد"
+      },
+      "thinning": {
+        "en": "Placeholder — dilute with 20 to 30% clean water",
+        "ar": "نص مؤقت — يخفف بنسبة 20 إلى 30% ماء نظيف"
+      },
+      "dryTime": {
+        "en": "Placeholder — surface dry in 1 hour",
+        "ar": "نص مؤقت — يجف سطحياً خلال ساعة"
+      },
+      "recoat": {
+        "en": "Placeholder — recoat after 4 hours",
+        "ar": "نص مؤقت — يعاد الطلاء بعد 4 ساعات"
+      },
+      "shelfLife": {
+        "en": "Placeholder — 24 months sealed",
+        "ar": "نص مؤقت — 24 شهر في العبوة المغلقة"
+      }
+    },
+    "description": {
+      "en": "Placeholder copy. A washable interior and exterior wall paint with high opacity and a bright white base. Final product text will replace this once the client sheet arrives.",
+      "ar": "نص مؤقت. بلاستيك قابل للغسيل للحوائط الداخلية والخارجية بتغطية عالية وبياض ناصع. سيتم استبدال النص عند استلام بيانات المنتج."
+    },
+    "features": [
+      {
+        "en": "Placeholder — bright white base",
+        "ar": "نص مؤقت — ناصع البياض"
+      },
+      {
+        "en": "Placeholder — high opacity",
+        "ar": "نص مؤقت — تغطية عالية"
+      },
+      {
+        "en": "Placeholder — washable finish",
+        "ar": "نص مؤقت — قابل للغسيل"
+      }
+    ]
+  },
+  {
+    "slug": "gold-600",
+    "name": {
+      "en": "Gold 600",
+      "ar": "جولد 600"
+    },
+    "family": "gold",
+    "form": "bucket",
+    "code": "600",
+    "use": "both",
+    "finish": {
+      "en": "Decorative matt",
+      "ar": "مط ديكوري"
+    },
+    "label": null,
+    "sizes": [
+      "3kg",
+      "9kg",
+      "20kg"
+    ],
+    "viewScale": 1.45,
+    "room": 1,
+    "specs": {
+      "coverage": {
+        "en": "Placeholder — 7 to 9 m² per kg per coat",
+        "ar": "نص مؤقت — من 7 إلى 9 متر مربع للكيلو للوجه الواحد"
+      },
+      "thinning": {
+        "en": "Placeholder — dilute with 25% clean water",
+        "ar": "نص مؤقت — يخفف بنسبة 25% ماء نظيف"
+      },
+      "dryTime": {
+        "en": "Placeholder — surface dry in 90 minutes",
+        "ar": "نص مؤقت — يجف سطحياً خلال 90 دقيقة"
+      },
+      "recoat": {
+        "en": "Placeholder — recoat after 5 hours",
+        "ar": "نص مؤقت — يعاد الطلاء بعد 5 ساعات"
+      },
+      "shelfLife": {
+        "en": "Placeholder — 24 months sealed",
+        "ar": "نص مؤقت — 24 شهر في العبوة المغلقة"
+      }
+    },
+    "description": {
+      "en": "Placeholder copy. A decorative wall paint for interior and exterior surfaces with a soft matt finish. Final product text will replace this once the client sheet arrives.",
+      "ar": "نص مؤقت. بويه ديكورية للحوائط الداخلية والخارجية بلمسة نهائية مط ناعمة. سيتم استبدال النص عند استلام بيانات المنتج."
+    },
+    "features": [
+      {
+        "en": "Placeholder — soft matt finish",
+        "ar": "نص مؤقت — لمسة مط ناعمة"
+      },
+      {
+        "en": "Placeholder — interior and exterior",
+        "ar": "نص مؤقت — داخلى وخارجى"
+      },
+      {
+        "en": "Placeholder — high quality binder",
+        "ar": "نص مؤقت — رابط عالى الجودة"
+      }
+    ]
+  },
+  {
+    "slug": "top-plastic-turkish",
+    "name": {
+      "en": "Top Plastic Turkish 10/10",
+      "ar": "توب بلاستيك تركى 10/10"
+    },
+    "family": "top",
+    "form": "bucket",
+    "code": "10/10",
+    "use": "interior",
+    "finish": {
+      "en": "Plastic matt",
+      "ar": "بلاستيك مط"
+    },
+    "label": null,
+    "sizes": [
+      "1kg",
+      "3kg",
+      "9kg"
+    ],
+    "viewScale": 1.45,
+    "room": 2,
+    "specs": {
+      "coverage": {
+        "en": "Placeholder — 9 to 11 m² per kg per coat",
+        "ar": "نص مؤقت — من 9 إلى 11 متر مربع للكيلو للوجه الواحد"
+      },
+      "thinning": {
+        "en": "Placeholder — dilute with 30% clean water",
+        "ar": "نص مؤقت — يخفف بنسبة 30% ماء نظيف"
+      },
+      "dryTime": {
+        "en": "Placeholder — surface dry in 45 minutes",
+        "ar": "نص مؤقت — يجف سطحياً خلال 45 دقيقة"
+      },
+      "recoat": {
+        "en": "Placeholder — recoat after 3 hours",
+        "ar": "نص مؤقت — يعاد الطلاء بعد 3 ساعات"
+      },
+      "shelfLife": {
+        "en": "Placeholder — 18 months sealed",
+        "ar": "نص مؤقت — 18 شهر في العبوة المغلقة"
+      }
+    },
+    "description": {
+      "en": "Placeholder copy. An interior matt plastic paint with strong spreading power and a smooth uniform surface. Final product text will replace this once the client sheet arrives.",
+      "ar": "نص مؤقت. بلاستيك مط للاستخدام الداخلى بقوة فرد عالية وسطح ناعم منتظم. سيتم استبدال النص عند استلام بيانات المنتج."
+    },
+    "features": [
+      {
+        "en": "Placeholder — strong spreading power",
+        "ar": "نص مؤقت — قوة فرد عالية"
+      },
+      {
+        "en": "Placeholder — interior use",
+        "ar": "نص مؤقت — للاستخدام الداخلى"
+      },
+      {
+        "en": "Placeholder — smooth matt surface",
+        "ar": "نص مؤقت — سطح مط ناعم"
+      }
+    ]
+  }
+]
