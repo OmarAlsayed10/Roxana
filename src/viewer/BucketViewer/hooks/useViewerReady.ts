@@ -11,17 +11,13 @@ const probeCapabilities = () => {
     supportsWebgl = false
   }
 
-  return {
-    supports3d: supportsWebgl && !matchMedia('(prefers-reduced-motion: reduce)').matches,
-    needsTap: matchMedia('(pointer: coarse)').matches
-  }
+  return supportsWebgl && !matchMedia('(prefers-reduced-motion: reduce)').matches
 }
 
 export const useViewerReady = () => {
   const rootRef = useRef<HTMLDivElement>(null)
-  const [{ supports3d, needsTap }] = useState(probeCapabilities)
+  const [supports3d] = useState(probeCapabilities)
   const [hasEnteredView, setHasEnteredView] = useState(false)
-  const [isActivated, setIsActivated] = useState(false)
 
   useEffect(() => {
     const element = rootRef.current
@@ -38,7 +34,5 @@ export const useViewerReady = () => {
     return () => observer.disconnect()
   }, [hasEnteredView])
 
-  const shouldRender = supports3d && hasEnteredView && (!needsTap || isActivated)
-
-  return { rootRef, shouldRender, needsTap, supports3d, activate: () => setIsActivated(true) }
+  return { rootRef, shouldRender: supports3d && hasEnteredView }
 }

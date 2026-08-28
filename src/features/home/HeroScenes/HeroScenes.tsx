@@ -1,7 +1,7 @@
 import type { CSSProperties } from 'react'
 import { productPath } from '../../../app'
 import { products, type Language } from '../../../content'
-import { assetPath, familyHex, familyLabel } from '../../../shared/utils'
+import { assetPath, familyHex, familyLabel, posterPath } from '../../../shared/utils'
 import { Button, DisplayHeading } from '../../../UI'
 import { BucketViewer, roomFiles } from '../../../viewer'
 import { activeSceneIndex, sceneCta, sceneProgress, turnsPerScene, viewportsPerScene } from './constant'
@@ -27,6 +27,8 @@ export const HeroScenes = ({ language }: { language: Language }) => {
             accent={familyHex[active.family]}
             label={active.label ? assetPath(active.label) : null}
             labelOffset={active.labelOffset}
+            poster={posterPath(active.slug)}
+            posterAlt={active.name[language]}
             language={language}
             viewScale={active.viewScale}
             spin={sceneProgress(progress, products.length, activeIndex) * Math.PI * 2 * turnsPerScene}

@@ -3,14 +3,19 @@ import { ViewerPosterTokens } from './tokens'
 
 type ViewerPosterProps = {
   accent: string
-  hint?: string
-  onActivate?: () => void
+  image?: string
+  alt?: string
 }
 
-export const ViewerPoster = ({ accent, hint, onActivate }: ViewerPosterProps) => (
-  <div {...ViewerPosterTokens.root} onClick={onActivate} role={onActivate ? 'button' : undefined}>
-    <div {...ViewerPosterTokens.grain} />
-    <BucketMark accent={accent} className={ViewerPosterTokens.mark.className} />
-    {hint && <p {...ViewerPosterTokens.hint}>{hint}</p>}
+export const ViewerPoster = ({ accent, image, alt = '' }: ViewerPosterProps) => (
+  <div {...ViewerPosterTokens.root}>
+    {image ? (
+      <img src={image} alt={alt} decoding="async" {...ViewerPosterTokens.image} />
+    ) : (
+      <>
+        <div {...ViewerPosterTokens.grain} />
+        <BucketMark accent={accent} className={ViewerPosterTokens.mark.className} />
+      </>
+    )}
   </div>
 )

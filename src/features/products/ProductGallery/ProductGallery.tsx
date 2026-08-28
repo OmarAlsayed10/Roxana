@@ -1,5 +1,5 @@
 import type { Language, Product } from '../../../content'
-import { assetPath, familyHex } from '../../../shared/utils'
+import { assetPath, familyHex, posterPath } from '../../../shared/utils'
 import { BucketViewer, roomFiles } from '../../../viewer'
 import { sizeLabel } from './constant'
 import { ProductGalleryTokens } from './tokens'
@@ -17,6 +17,8 @@ export const ProductGallery = ({ product, language }: ProductGalleryProps) => (
         accent={familyHex[product.family]}
         label={product.label ? assetPath(product.label) : null}
             labelOffset={product.labelOffset}
+        poster={posterPath(product.slug)}
+        posterAlt={product.name[language]}
         language={language}
         viewScale={product.viewScale}
         rooms={[roomFiles[product.room] ?? roomFiles[0]]}

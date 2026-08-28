@@ -84,7 +84,7 @@
     "sizes": [
       "9L"
     ],
-    "viewScale": 1.3,
+    "viewScale": 1.2,
     "room": 1,
     "specs": {
       "coverage": {
@@ -146,7 +146,7 @@
     "sizes": [
       "9L"
     ],
-    "viewScale": 1.3,
+    "viewScale": 1.2,
     "room": 2,
     "specs": {
       "coverage": {
@@ -208,7 +208,7 @@
     "sizes": [
       "9L"
     ],
-    "viewScale": 1.3,
+    "viewScale": 1.2,
     "room": 0,
     "specs": {
       "coverage": {
@@ -270,7 +270,7 @@
     "sizes": [
       "13kg"
     ],
-    "viewScale": 1.3,
+    "viewScale": 1.1,
     "room": 1,
     "specs": {
       "coverage": {

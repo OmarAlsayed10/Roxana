@@ -13,6 +13,8 @@ type BucketViewerProps = {
   accent: string
   label?: string | null
   labelOffset?: number
+  poster?: string
+  posterAlt?: string
   language: Language
   viewScale?: number
   autoRotate?: boolean
@@ -27,6 +29,8 @@ export const BucketViewer = ({
   accent,
   label = null,
   labelOffset = 0,
+  poster,
+  posterAlt,
   language,
   viewScale = 1,
   autoRotate = true,
@@ -35,16 +39,11 @@ export const BucketViewer = ({
   rooms = defaultRooms,
   activeRoom = 0
 }: BucketViewerProps) => {
-  const { rootRef, shouldRender, needsTap, supports3d, activate } = useViewerReady()
-  const showTapHint = supports3d && needsTap && !shouldRender
+  const { rootRef, shouldRender } = useViewerReady()
 
   return (
     <div ref={rootRef} {...BucketViewerTokens.root}>
-      <ViewerPoster
-        accent={accent}
-        hint={showTapHint ? viewerHint.tap[language] : undefined}
-        onActivate={showTapHint ? activate : undefined}
-      />
+      <ViewerPoster accent={accent} image={poster} alt={posterAlt} />
       {shouldRender && (
         <Suspense fallback={null}>
           <div {...BucketViewerTokens.stage}>
