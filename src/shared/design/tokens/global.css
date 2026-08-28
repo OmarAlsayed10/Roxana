@@ -68,8 +68,6 @@
   :root[data-theme="dark"] .poster-room { background: radial-gradient(circle at 62% 28%, #3b352c, transparent 46%), radial-gradient(circle at 20% 80%, #1c1a17, transparent 52%), linear-gradient(168deg, #24211c 0%, #17150f 60%, #0f0e0b 100%); }
 }
 
-@keyframes fade-in { from { opacity: 0; } }
-
 ::view-transition-old(root) { animation: route-out 260ms ease both; }
 ::view-transition-new(root) { animation: route-in 480ms cubic-bezier(.2, .8, .2, 1) both; }
 @keyframes route-out { to { opacity: 0; } }

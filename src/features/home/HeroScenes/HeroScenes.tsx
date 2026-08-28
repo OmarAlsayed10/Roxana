@@ -1,4 +1,4 @@
-import type { CSSProperties } from 'react'
+import { useEffect, type CSSProperties } from 'react'
 import { productPath } from '../../../app'
 import { products, type Language } from '../../../content'
 import { assetPath, familyHex, familyLabel, posterPath } from '../../../shared/utils'
@@ -10,8 +10,14 @@ import { HeroScenesTokens } from './tokens'
 
 const sceneNumber = (index: number) => String(index + 1).padStart(2, '0')
 
+const productLabels = products.flatMap((product) => product.label ? [assetPath(product.label)] : [])
+
 export const HeroScenes = ({ language }: { language: Language }) => {
   const { sectionRef, progress } = useScrollProgress()
+
+  useEffect(() => {
+    void import('../../../viewer/RoomStage').then(({ preloadRoomStageAssets }) => preloadRoomStageAssets(productLabels, roomFiles))
+  }, [])
   const activeIndex = activeSceneIndex(progress, products.length)
   useSceneAutoplay({ sectionRef, count: products.length, activeIndex })
 

@@ -11,17 +11,15 @@ type RoomEnvironmentsProps = {
 }
 
 export const RoomEnvironments = ({ rooms, activeRoom }: RoomEnvironmentsProps) => {
-  const maps = useLoader(RGBELoader, rooms)
+  const room = useLoader(RGBELoader, rooms[Math.min(activeRoom, rooms.length - 1)])
 
   useLayoutEffect(() => {
-    maps.forEach((map) => {
-      map.mapping = EquirectangularReflectionMapping
-    })
-  }, [maps])
+    room.mapping = EquirectangularReflectionMapping
+  }, [room])
 
   return (
     <Environment
-      map={maps[Math.min(activeRoom, maps.length - 1)]}
+      map={room}
       background
       backgroundBlurriness={stageSettings.backgroundBlurriness}
       environmentIntensity={stageSettings.environmentIntensity}
