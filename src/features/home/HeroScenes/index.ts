@@ -1,2 +1,2 @@
 export { HeroScenes } from './HeroScenes'
-export { sceneRooms, sceneSetup } from './constant'
+export { sceneCta, viewportsPerScene } from './constant'

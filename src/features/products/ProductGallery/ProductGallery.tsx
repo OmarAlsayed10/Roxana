@@ -1,5 +1,5 @@
 import type { Language, Product } from '../../../content'
-import { familyHex } from '../../../shared/utils'
+import { assetPath, familyHex } from '../../../shared/utils'
 import { BucketViewer, roomFiles } from '../../../viewer'
 import { sizeLabel } from './constant'
 import { ProductGalleryTokens } from './tokens'
@@ -15,6 +15,7 @@ export const ProductGallery = ({ product, language }: ProductGalleryProps) => (
       <BucketViewer
         size={product.sizes[0]}
         accent={familyHex[product.family]}
+        label={product.label ? assetPath(product.label) : null}
         language={language}
         viewScale={product.viewScale}
         rooms={[roomFiles[product.room] ?? roomFiles[0]]}

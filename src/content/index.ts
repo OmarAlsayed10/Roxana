@@ -8,7 +8,7 @@ export type BilingualText = { en: string; ar: string }
 export type ProductFamily = 'lg' | 'top' | 'gold' | 'exo' | 'putty' | 'glue'
 export type ProductForm = 'bucket' | 'sack'
 export type ProductUse = 'interior' | 'exterior' | 'both'
-export type BucketSize = '1kg' | '3kg' | '9kg' | '20kg'
+export type BucketSize = '2.5L' | '3kg' | '9L' | '13kg'
 
 export type Product = {
   slug: string
@@ -33,14 +33,6 @@ export type Product = {
   features: BilingualText[]
 }
 
-export type Scene = {
-  key: string
-  viewScale: number
-  eyebrow: BilingualText
-  title: BilingualText
-  body: BilingualText
-  cta: BilingualText
-}
 export type Claim = { value: string; label: BilingualText }
 export type UseCase = { key: string; title: BilingualText; body: BilingualText }
 
@@ -52,7 +44,6 @@ export type Company = {
   heroSubline: BilingualText
   intro: BilingualText
   story: BilingualText
-  scenes: Scene[]
   claims: Claim[]
   useCases: UseCase[]
 }

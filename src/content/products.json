@@ -13,52 +13,115 @@
       "en": "Washable plastic",
       "ar": "بلاستيك قابل للغسيل"
     },
-    "label": null,
+    "label": "labels/lg-8000.webp",
     "sizes": [
-      "3kg",
-      "9kg",
-      "20kg"
+      "2.5L"
     ],
-    "viewScale": 1.45,
+    "viewScale": 1.0,
     "room": 0,
     "specs": {
       "coverage": {
-        "en": "Placeholder — 8 to 10 m² per kg per coat",
-        "ar": "نص مؤقت — من 8 إلى 10 متر مربع للكيلو للوجه الواحد"
+        "en": "8 to 10 m² per litre at 30–40 micron film thickness",
+        "ar": "من ٨ : ١٠ م / لتر بسمك فيلم ٣٠ : ٤٠ ميكرون"
       },
       "thinning": {
-        "en": "Placeholder — dilute with 20 to 30% clean water",
-        "ar": "نص مؤقت — يخفف بنسبة 20 إلى 30% ماء نظيف"
+        "en": "Dilute with clean water",
+        "ar": "يخفف بالماء النظيف"
       },
       "dryTime": {
-        "en": "Placeholder — surface dry in 1 hour",
-        "ar": "نص مؤقت — يجف سطحياً خلال ساعة"
+        "en": "Surface dry in 2 hours at 25°C and 60% relative humidity",
+        "ar": "جفاف سطحى ٢ ساعة عند درجة حرارة ٢٥ و ٦٠٪ رطوبة نسبية"
       },
       "recoat": {
-        "en": "Placeholder — recoat after 4 hours",
-        "ar": "نص مؤقت — يعاد الطلاء بعد 4 ساعات"
+        "en": "Recoat after 4 hours",
+        "ar": "زمن إعادة الدهان ٤ ساعات"
       },
       "shelfLife": {
-        "en": "Placeholder — 24 months sealed",
-        "ar": "نص مؤقت — 24 شهر في العبوة المغلقة"
+        "en": "Two years from the production date printed on the pack",
+        "ar": "عامان من تاريخ الإنتاج المدون على العبوة"
       }
     },
     "description": {
-      "en": "Placeholder copy. A washable interior and exterior wall paint with high opacity and a bright white base. Final product text will replace this once the client sheet arrives.",
-      "ar": "نص مؤقت. بلاستيك قابل للغسيل للحوائط الداخلية والخارجية بتغطية عالية وبياض ناصع. سيتم استبدال النص عند استلام بيانات المنتج."
+      "en": "LG Plastic is made from the finest styrene-acrylic materials, 100% acrylic. It gives a highly smooth, odourless, bright white surface that is easy to tint.",
+      "ar": "ال جى بلاستيك مصنع من أجود أنواع الاستيرين أكريليك ١٠٠٪، نعومة عالية على الأسطح، ليس له رائحة، ناصع البياض وسهل التلوين."
     },
     "features": [
       {
-        "en": "Placeholder — bright white base",
-        "ar": "نص مؤقت — ناصع البياض"
+        "en": "Used as a coating for walls and ceilings for high quality finishes",
+        "ar": "يستخدم كدهان للحوائط والأسقف للحصول على تشطيبات عالية الجودة"
       },
       {
-        "en": "Placeholder — high opacity",
-        "ar": "نص مؤقت — تغطية عالية"
+        "en": "High resistance to washing",
+        "ar": "مقاومة عالية للغسيل"
       },
       {
-        "en": "Placeholder — washable finish",
-        "ar": "نص مؤقت — قابل للغسيل"
+        "en": "Apply by brush, roller or airless spray gun",
+        "ar": "أدوات الاستخدام: فرشاة / رولة / مسدس الرش الهوائى"
+      },
+      {
+        "en": "Available in white",
+        "ar": "الألوان: متوفر باللون الأبيض"
+      }
+    ]
+  },
+  {
+    "slug": "lg-800",
+    "name": {
+      "en": "LG 800",
+      "ar": "ال جى 800"
+    },
+    "family": "lg",
+    "form": "bucket",
+    "code": "800",
+    "use": "both",
+    "finish": {
+      "en": "Washable plastic",
+      "ar": "بلاستيك قابل للغسيل"
+    },
+    "label": "labels/lg-800.webp",
+    "sizes": [
+      "9L"
+    ],
+    "viewScale": 1.0,
+    "room": 1,
+    "specs": {
+      "coverage": {
+        "en": "8 to 10 m² per litre at 30–40 micron film thickness",
+        "ar": "من ٨ : ١٠ م / لتر بسمك فيلم ٣٠ : ٤٠ ميكرون"
+      },
+      "thinning": {
+        "en": "Dilute with water at 10–15% maximum of pack weight",
+        "ar": "يخفف بالماء بنسبة ١٠ : ١٥٪ كحد أقصى من وزن العبوة"
+      },
+      "dryTime": {
+        "en": "Surface dry in 2 hours, fully dry in 24 hours, at 25°C and 60% relative humidity",
+        "ar": "جفاف سطحى ٢ ساعة، جفاف كامل ٢٤ ساعة، عند درجة ٢٥ و ٦٠٪ رطوبة نسبية"
+      },
+      "recoat": {
+        "en": "Second coat after a minimum of 4 hours",
+        "ar": "زمن إعادة الوجه الثانى أقل مدة ممكنة ٤ ساعات"
+      },
+      "shelfLife": {
+        "en": "Two years from the production date printed on the pack, stored in suitable conditions away from direct sunlight",
+        "ar": "عامان من تاريخ الإنتاج المدون على العبوة على أن يخزن فى الظروف الجوية المناسبة ولا يعرض لأشعة الشمس المباشرة"
+      }
+    },
+    "description": {
+      "en": "A plastic paint made from the finest acrylic types, for a high quality bright white surface with high coverage.",
+      "ar": "دهان بلاستيك مصنع من أجود أنواع الأكريليك لسطح عالى الجودة ناصع البياض ذو تغطية عالية."
+    },
+    "features": [
+      {
+        "en": "Easy to use, resistant to chalking, staining and running",
+        "ar": "سهل الاستخدام، مقاوم للتجيير، ومقاوم للاتساخ والانسياب"
+      },
+      {
+        "en": "For new and old interior and exterior cement surfaces",
+        "ar": "يستخدم على الأسطح الأسمنتية الداخلية والخارجية الجديدة والقديمة"
+      },
+      {
+        "en": "Apply by brush, roller or airless spray gun",
+        "ar": "تستخدم الفرشاة أو الرولة أو مسدس الرش اللاهوائى"
       }
     ]
   },
@@ -73,118 +136,301 @@
     "code": "600",
     "use": "both",
     "finish": {
-      "en": "Decorative matt",
-      "ar": "مط ديكوري"
+      "en": "Washable plastic",
+      "ar": "بلاستيك قابل للغسيل"
     },
-    "label": null,
+    "label": "labels/gold-600.webp",
     "sizes": [
-      "3kg",
-      "9kg",
-      "20kg"
+      "9L"
     ],
-    "viewScale": 1.45,
-    "room": 1,
+    "viewScale": 1.0,
+    "room": 2,
     "specs": {
       "coverage": {
-        "en": "Placeholder — 7 to 9 m² per kg per coat",
-        "ar": "نص مؤقت — من 7 إلى 9 متر مربع للكيلو للوجه الواحد"
+        "en": "8 to 10 m² per litre at 30–40 micron film thickness",
+        "ar": "من ٨ : ١٠ م / لتر بسمك فيلم ٣٠ : ٤٠ ميكرون"
       },
       "thinning": {
-        "en": "Placeholder — dilute with 25% clean water",
-        "ar": "نص مؤقت — يخفف بنسبة 25% ماء نظيف"
+        "en": "Dilute with water at 10–15% maximum of pack weight",
+        "ar": "يخفف بالماء بنسبة ١٠ : ١٥٪ كحد أقصى من وزن العبوة"
       },
       "dryTime": {
-        "en": "Placeholder — surface dry in 90 minutes",
-        "ar": "نص مؤقت — يجف سطحياً خلال 90 دقيقة"
+        "en": "Surface dry in 2 hours, fully dry in 24 hours, at 25°C and 60% relative humidity",
+        "ar": "جفاف سطحى ٢ ساعة، جفاف كامل ٢٤ ساعة، عند درجة ٢٥ و ٦٠٪ رطوبة نسبية"
       },
       "recoat": {
-        "en": "Placeholder — recoat after 5 hours",
-        "ar": "نص مؤقت — يعاد الطلاء بعد 5 ساعات"
+        "en": "Second coat after a minimum of 4 hours",
+        "ar": "زمن إعادة الوجه الثانى أقل مدة ممكنة ٤ ساعات"
       },
       "shelfLife": {
-        "en": "Placeholder — 24 months sealed",
-        "ar": "نص مؤقت — 24 شهر في العبوة المغلقة"
+        "en": "Two years from the production date printed on the pack, stored in suitable conditions away from direct sunlight",
+        "ar": "عامان من تاريخ الإنتاج المدون على العبوة على أن يخزن فى الظروف الجوية المناسبة ولا يعرض لأشعة الشمس المباشرة"
       }
     },
     "description": {
-      "en": "Placeholder copy. A decorative wall paint for interior and exterior surfaces with a soft matt finish. Final product text will replace this once the client sheet arrives.",
-      "ar": "نص مؤقت. بويه ديكورية للحوائط الداخلية والخارجية بلمسة نهائية مط ناعمة. سيتم استبدال النص عند استلام بيانات المنتج."
+      "en": "A plastic paint made from the finest acrylic types, for a high quality bright white surface with high coverage and resistance to washing.",
+      "ar": "دهان بلاستيك مصنع من أجود أنواع الأكريليك لسطح عالى الجودة ناصع البياض ذو تغطية عالية ومقاوم للغسيل."
     },
     "features": [
       {
-        "en": "Placeholder — soft matt finish",
-        "ar": "نص مؤقت — لمسة مط ناعمة"
+        "en": "Easy to use, resistant to chalking, staining and running",
+        "ar": "سهل الاستخدام، مقاوم للتجيير، ومقاوم للاتساخ والانسياب"
       },
       {
-        "en": "Placeholder — interior and exterior",
-        "ar": "نص مؤقت — داخلى وخارجى"
+        "en": "For new and old interior and exterior cement surfaces and high finishes",
+        "ar": "يستخدم على الأسطح الأسمنتية الداخلية والخارجية الجديدة والقديمة والتشطيبات العالية"
       },
       {
-        "en": "Placeholder — high quality binder",
-        "ar": "نص مؤقت — رابط عالى الجودة"
+        "en": "Apply by brush, roller or airless spray gun",
+        "ar": "تستخدم الفرشاة أو الرولة أو مسدس الرش اللاهوائى"
+      }
+    ]
+  },
+  {
+    "slug": "exo-900",
+    "name": {
+      "en": "Exo 900",
+      "ar": "اكسو 900"
+    },
+    "family": "exo",
+    "form": "bucket",
+    "code": "900",
+    "use": "both",
+    "finish": {
+      "en": "Emulsion, washable plastic",
+      "ar": "إيمولشن بلاستيك قابل للغسيل"
+    },
+    "label": "labels/exo-900.webp",
+    "sizes": [
+      "9L"
+    ],
+    "viewScale": 1.0,
+    "room": 0,
+    "specs": {
+      "coverage": {
+        "en": "8 to 10 m² per litre at 30–40 micron film thickness",
+        "ar": "من ٨ : ١٠ م / لتر بسمك فيلم ٣٠ : ٤٠ ميكرون"
+      },
+      "thinning": {
+        "en": "Dilute with water at 10–15% maximum of pack weight",
+        "ar": "يخفف بالماء بنسبة ١٠ : ١٥٪ كحد أقصى من وزن العبوة"
+      },
+      "dryTime": {
+        "en": "Surface dry in 2 hours, fully dry in 24 hours, at 25°C and 60% relative humidity",
+        "ar": "جفاف سطحى ٢ ساعة، جفاف كامل ٢٤ ساعة، عند درجة ٢٥ و ٦٠٪ رطوبة نسبية"
+      },
+      "recoat": {
+        "en": "Second coat after a minimum of 4 hours",
+        "ar": "زمن إعادة الوجه الثانى أقل مدة ممكنة ٤ ساعات"
+      },
+      "shelfLife": {
+        "en": "Two years from the production date printed on the pack, stored in suitable conditions away from direct sunlight",
+        "ar": "عامان من تاريخ الإنتاج المدون على العبوة على أن يخزن فى الظروف الجوية المناسبة ولا يعرض لأشعة الشمس المباشرة"
+      }
+    },
+    "description": {
+      "en": "An emulsion plastic paint made from the finest acrylic types, for a high quality bright white surface with high coverage and resistance to washing.",
+      "ar": "دهان بلاستيك مصنع من أجود أنواع الأكريليك لسطح عالى الجودة ناصع البياض ذو تغطية عالية ومقاوم للغسيل."
+    },
+    "features": [
+      {
+        "en": "Easy to use, resistant to chalking, staining and running",
+        "ar": "سهل الاستخدام، مقاوم للتجيير، ومقاوم للاتساخ والانسياب"
+      },
+      {
+        "en": "For new and old interior and exterior cement surfaces and high finishes",
+        "ar": "يستخدم على الأسطح الأسمنتية الداخلية والخارجية الجديدة والقديمة والتشطيبات العالية"
+      },
+      {
+        "en": "Apply by brush, roller or airless spray gun",
+        "ar": "تستخدم الفرشاة أو الرولة أو مسدس الرش اللاهوائى"
       }
     ]
   },
   {
     "slug": "top-plastic-turkish",
     "name": {
-      "en": "Top Plastic Turkish 10/10",
-      "ar": "توب بلاستيك تركى 10/10"
+      "en": "Top Plastic Turkish",
+      "ar": "توب بلاستيك تركى"
     },
     "family": "top",
     "form": "bucket",
-    "code": "10/10",
-    "use": "interior",
+    "code": "13kg",
+    "use": "both",
     "finish": {
-      "en": "Plastic matt",
-      "ar": "بلاستيك مط"
+      "en": "Plastic matt, wash resistant",
+      "ar": "بلاستيك مط مقاوم للغسيل"
     },
-    "label": null,
+    "label": "labels/top-plastic-turkish.webp",
     "sizes": [
-      "1kg",
-      "3kg",
-      "9kg"
+      "13kg"
     ],
-    "viewScale": 1.45,
-    "room": 2,
+    "viewScale": 1.0,
+    "room": 1,
     "specs": {
       "coverage": {
-        "en": "Placeholder — 9 to 11 m² per kg per coat",
-        "ar": "نص مؤقت — من 9 إلى 11 متر مربع للكيلو للوجه الواحد"
+        "en": "10 to 12 m² per litre; 9 to 10 m² per kg depending on surface and preparation",
+        "ar": "من ١٠ : ١٢ متر مربع / لتر، ومن ٩ : ١٠ متر لكل ١ كجم حسب طبيعة السطح ودرجة تجهيزه"
       },
       "thinning": {
-        "en": "Placeholder — dilute with 30% clean water",
-        "ar": "نص مؤقت — يخفف بنسبة 30% ماء نظيف"
+        "en": "Dilute with clean water at 10–20%",
+        "ar": "يخفف بالماء النظيف من ١٠ : ٢٠٪"
       },
       "dryTime": {
-        "en": "Placeholder — surface dry in 45 minutes",
-        "ar": "نص مؤقت — يجف سطحياً خلال 45 دقيقة"
+        "en": "Surface dry at 25°C after 30 minutes, fully dry after two hours",
+        "ar": "جفاف سطحى عند ٢٥ درجة حرارة بعد ٣٠ دقيقة، وجفاف نهائى بعد ساعتين"
       },
       "recoat": {
-        "en": "Placeholder — recoat after 3 hours",
-        "ar": "نص مؤقت — يعاد الطلاء بعد 3 ساعات"
+        "en": "Solid content 60%",
+        "ar": "المحتوى الصلب ٦٠٪"
       },
       "shelfLife": {
-        "en": "Placeholder — 18 months sealed",
-        "ar": "نص مؤقت — 18 شهر في العبوة المغلقة"
+        "en": "18 months from the production date",
+        "ar": "صالح لمدة ١٨ شهر من تاريخ الإنتاج"
       }
     },
     "description": {
-      "en": "Placeholder copy. An interior matt plastic paint with strong spreading power and a smooth uniform surface. Final product text will replace this once the client sheet arrives.",
-      "ar": "نص مؤقت. بلاستيك مط للاستخدام الداخلى بقوة فرد عالية وسطح ناعم منتظم. سيتم استبدال النص عند استلام بيانات المنتج."
+      "en": "A washable water-based paint on an acrylic base for interior and exterior use, characterised by bright white, a high spreading rate, excellent covering ability and high washing resistance. Conforms to the Egyptian standard for interior paints.",
+      "ar": "بلاستيك تركى عالى الجودة، دهان مائى قابل للغسيل على أساس أكريليك للاستخدامات الداخلية والخارجية. يتميز ببياض ناصع ومعدل فرد عالى وقدرة تغطية ممتازة ومقاومة عالية للغسيل. مطابق للمواصفة القياسية المصرية لدهانات الأسطح الداخلية."
     },
     "features": [
       {
-        "en": "Placeholder — strong spreading power",
-        "ar": "نص مؤقت — قوة فرد عالية"
+        "en": "Used as a lining or finishing coat on concrete, plaster and gypsum board",
+        "ar": "يستخدم كبطانة أو تشطيب نهائى على الأسطح الأسمنتية والمحارة وألواح الجيسوبورد"
       },
       {
-        "en": "Placeholder — interior use",
-        "ar": "نص مؤقت — للاستخدام الداخلى"
+        "en": "Matt finish resistant to friction and scratching",
+        "ar": "كوجه تشطيبى نهائى مطفى مقاوم للاحتكاك والخدش"
       },
       {
-        "en": "Placeholder — smooth matt surface",
-        "ar": "نص مؤقت — سطح مط ناعم"
+        "en": "Environmentally friendly product",
+        "ar": "منتج صديق للبيئة"
+      },
+      {
+        "en": "Apply by brush, roller or spray gun",
+        "ar": "أدوات التطبيق: الفرشاة، الرولة، مسدس الرش"
+      }
+    ]
+  },
+  {
+    "slug": "lg-water-sealer",
+    "name": {
+      "en": "LG Water Sealer",
+      "ar": "ال جى سيلر مائى"
+    },
+    "family": "lg",
+    "form": "bucket",
+    "code": "sealer",
+    "use": "both",
+    "finish": {
+      "en": "Water-based sealer",
+      "ar": "سيلر مائى"
+    },
+    "label": "labels/lg-water-sealer.webp",
+    "sizes": [
+      "3kg"
+    ],
+    "viewScale": 1.0,
+    "room": 2,
+    "specs": {
+      "coverage": {
+        "en": "9 to 12 m² per kg depending on the surface",
+        "ar": "من ٩ : ١٢ متر / ك حسب السطح"
+      },
+      "thinning": {
+        "en": "Dilute with clean water at 10–20%",
+        "ar": "يخفف بالماء النظيف من ١٠ : ٢٠٪"
+      },
+      "dryTime": {
+        "en": "Surface dry at 25°C after 30 minutes, fully dry after two hours",
+        "ar": "جفاف سطحى عند ٢٥ درجة حرارة بعد ٣٠ دقيقة، وجفاف نهائى بعد ساعتين"
+      },
+      "recoat": {
+        "en": "Solid content 60%",
+        "ar": "المحتوى الصلب ٦٠٪"
+      },
+      "shelfLife": {
+        "en": "18 months from the production date",
+        "ar": "صالح لمدة ١٨ شهر من تاريخ الإنتاج"
+      }
+    },
+    "description": {
+      "en": "A high quality water sealer for indoor and outdoor applications, with high penetrating power into the surface. Used as a base coat on cement, concrete and clay brick surfaces.",
+      "ar": "سيلر مائى عالى الجودة للتطبيقات الداخلية والخارجية ذو قدرة عالية على النفاذية داخل السطح. يستخدم كأساس فى التطبيقات الداخلية والخارجية على الأسطح الأسمنتية والخرسانية والطوب الفخارى."
+    },
+    "features": [
+      {
+        "en": "Good moisture resistance and excellent adhesion to surfaces and finishes",
+        "ar": "مقاومة جيدة للرطوبة وقوة التصاق ممتازة مع الأسطح والطبقات النهائية"
+      },
+      {
+        "en": "Environmentally friendly — contains no lead, cadmium or zinc additives",
+        "ar": "صديق للبيئة حيث أنه لا يحتوى على أى إضافات من الرصاص أو الكادميوم أو الخارصين"
+      },
+      {
+        "en": "Surface must be dry, clean and free of dust, grease and oils",
+        "ar": "يجب أن يكون السطح المراد طلاؤه جافاً نظيفاً وخالياً من الأتربة والشحوم والزيوت"
+      }
+    ]
+  },
+  {
+    "slug": "top-sealer-turkish",
+    "name": {
+      "en": "Top Turkish Water Sealer",
+      "ar": "توب سيلر تركى"
+    },
+    "family": "top",
+    "form": "bucket",
+    "code": "sealer",
+    "use": "interior",
+    "finish": {
+      "en": "Water-based sealer",
+      "ar": "سيلر مائى"
+    },
+    "label": "labels/top-sealer-turkish.webp",
+    "sizes": [
+      "3kg"
+    ],
+    "viewScale": 1.0,
+    "room": 0,
+    "specs": {
+      "coverage": {
+        "en": "9 to 12 m² per kg depending on the surface",
+        "ar": "من ٩ : ١٢ متر / ك حسب السطح"
+      },
+      "thinning": {
+        "en": "Dilute with clean water at 10–20%",
+        "ar": "يخفف بالماء النظيف من ١٠ : ٢٠٪"
+      },
+      "dryTime": {
+        "en": "Surface dry at 25°C after 30 minutes, fully dry after two hours",
+        "ar": "جفاف سطحى عند ٢٥ درجة حرارة بعد ٣٠ دقيقة، وجفاف نهائى بعد ساعتين"
+      },
+      "recoat": {
+        "en": "Solid content 60%",
+        "ar": "المحتوى الصلب ٦٠٪"
+      },
+      "shelfLife": {
+        "en": "18 months from the production date",
+        "ar": "صالح لمدة ١٨ شهر من تاريخ الإنتاج"
+      }
+    },
+    "description": {
+      "en": "A high quality water sealer for indoor and outdoor applications, with high penetrating power into the surface. Used as a base coat on cement, concrete and clay brick surfaces.",
+      "ar": "سيلر تركى عالى الجودة للتطبيقات الداخلية والخارجية ذو قدرة عالية على النفاذية داخل السطح. يستخدم كأساس فى التطبيقات الداخلية والخارجية على الأسطح الأسمنتية والخرسانية والطوب الفخارى."
+    },
+    "features": [
+      {
+        "en": "Good moisture resistance and excellent adhesion to surfaces and finishes",
+        "ar": "مقاومة جيدة للرطوبة وقوة التصاق ممتازة مع الأسطح والطبقات النهائية"
+      },
+      {
+        "en": "Environmentally friendly — contains no lead, cadmium or zinc additives",
+        "ar": "صديق للبيئة حيث أنه لا يحتوى على أى إضافات من الرصاص أو الكادميوم أو الخارصين"
+      },
+      {
+        "en": "Stir the pack well before use and reseal after finishing",
+        "ar": "يجب تقليب محتويات العبوة جيداً قبل الاستخدام وغلق العبوة جيداً بعد الانتهاء"
       }
     ]
   }

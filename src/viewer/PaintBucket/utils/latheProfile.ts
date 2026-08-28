@@ -11,10 +11,6 @@ export const bucketProfilePoints = (profile: BucketProfile) => {
   if (profile.height <= 0 || profile.topDiameter <= 0 || profile.bottomDiameter <= 0) {
     throw new Error('bucketProfilePoints: dimensions must be positive')
   }
-  if (profile.labelHeight > profile.height) {
-    throw new Error('bucketProfilePoints: labelHeight cannot exceed height')
-  }
-
   const height = profile.height * millimetre
   const topRadius = (profile.topDiameter / 2) * millimetre
   const bottomRadius = (profile.bottomDiameter / 2) * millimetre
@@ -56,6 +52,5 @@ export const lidProfilePoints = (profile: BucketProfile) => {
 export const bucketMetrics = (profile: BucketProfile) => ({
   height: profile.height * millimetre,
   topRadius: (profile.topDiameter / 2) * millimetre,
-  bottomRadius: (profile.bottomDiameter / 2) * millimetre,
-  labelHeight: profile.labelHeight * millimetre
+  bottomRadius: (profile.bottomDiameter / 2) * millimetre
 })

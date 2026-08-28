@@ -5,9 +5,10 @@ type OrbitRigProps = {
   target: [number, number, number]
   autoRotate: boolean
   onInteract: () => void
+  onSettle: () => void
 }
 
-export const OrbitRig = ({ target, autoRotate, onInteract }: OrbitRigProps) => (
+export const OrbitRig = ({ target, autoRotate, onInteract, onSettle }: OrbitRigProps) => (
   <OrbitControls
     makeDefault
     target={target}
@@ -20,5 +21,6 @@ export const OrbitRig = ({ target, autoRotate, onInteract }: OrbitRigProps) => (
     autoRotate={autoRotate}
     autoRotateSpeed={orbitSettings.autoRotateSpeed}
     onStart={onInteract}
+    onEnd={onSettle}
   />
 )

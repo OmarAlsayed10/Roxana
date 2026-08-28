@@ -24,11 +24,13 @@ export const useSceneAutoplay = ({ sectionRef, count, activeIndex }: SceneAutopl
     addEventListener('touchstart', mark, { passive: true })
     addEventListener('keydown', mark)
     addEventListener('pointerdown', mark)
+    addEventListener('pointermove', mark, { passive: true })
     return () => {
       removeEventListener('wheel', mark)
       removeEventListener('touchstart', mark)
       removeEventListener('keydown', mark)
       removeEventListener('pointerdown', mark)
+      removeEventListener('pointermove', mark)
     }
   }, [])
 

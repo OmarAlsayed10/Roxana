@@ -11,6 +11,7 @@ const RoomStage = lazy(() => import('../RoomStage').then((module) => ({ default:
 type BucketViewerProps = {
   size: BucketSize
   accent: string
+  label?: string | null
   language: Language
   viewScale?: number
   autoRotate?: boolean
@@ -23,6 +24,7 @@ type BucketViewerProps = {
 export const BucketViewer = ({
   size,
   accent,
+  label = null,
   language,
   viewScale = 1,
   autoRotate = true,
@@ -47,6 +49,7 @@ export const BucketViewer = ({
             <RoomStage
               size={size}
               accent={accent}
+              label={label}
               viewScale={viewScale}
               autoRotate={autoRotate}
               spin={spin}

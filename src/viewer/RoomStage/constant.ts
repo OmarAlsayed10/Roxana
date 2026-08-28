@@ -4,6 +4,8 @@ export const roomFiles = ['room/interior.hdr', 'room/lebombo.hdr', 'room/hotel_r
 
 export const defaultRooms = [roomFiles[0]]
 
+export const idleResumeMs = 2500
+
 export const stageSettings = {
   fov: 28,
   dpr: [1, 1.75] as [number, number],

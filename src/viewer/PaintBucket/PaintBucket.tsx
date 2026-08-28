@@ -2,16 +2,19 @@ import { useMemo } from 'react'
 import { DoubleSide } from 'three'
 import type { BucketSize } from '../../content'
 import { bucketProfiles } from '../constants'
-import { bandMaterial, bodyMaterial, handleMaterial, handleTubeFactor, latheSegments, lidMaterial, surfaceSkin } from './constant'
+import { ColourBand } from './ColourBand'
+import { bodyMaterial, handleMaterial, handleTubeFactor, latheSegments, lidMaterial } from './constant'
+import { LabelBand } from './LabelBand'
 import { bucketMetrics, bucketProfilePoints, lidProfilePoints } from './utils'
 
 type PaintBucketProps = {
   size: BucketSize
   accent: string
+  label: string | null
   spin: number
 }
 
-export const PaintBucket = ({ size, accent, spin }: PaintBucketProps) => {
+export const PaintBucket = ({ size, accent, label, spin }: PaintBucketProps) => {
   const profile = bucketProfiles[size]
   const { bodyPoints, lidPoints, metrics } = useMemo(
     () => ({
@@ -22,11 +25,7 @@ export const PaintBucket = ({ size, accent, spin }: PaintBucketProps) => {
     [profile]
   )
 
-  const { height, topRadius, bottomRadius, labelHeight } = metrics
-  const radiusAt = (y: number) => bottomRadius + (topRadius - bottomRadius) * (y / height)
-  const bandBottom = height * 0.15
-  const bandTop = Math.min(bandBottom + labelHeight, height * 0.9)
-  const skin = surfaceSkin
+  const { height, topRadius, bottomRadius } = metrics
 
   return (
     <group rotation={[0, spin, 0]}>
@@ -35,12 +34,11 @@ export const PaintBucket = ({ size, accent, spin }: PaintBucketProps) => {
         <meshPhysicalMaterial {...bodyMaterial} side={DoubleSide} />
       </mesh>
 
-      <mesh position={[0, (bandBottom + bandTop) / 2, 0]} castShadow>
-        <cylinderGeometry
-          args={[radiusAt(bandTop) + skin, radiusAt(bandBottom) + skin, bandTop - bandBottom, latheSegments, 1, true]}
-        />
-        <meshPhysicalMaterial {...bandMaterial} color={accent} />
-      </mesh>
+      {label ? (
+        <LabelBand url={label} height={height} topRadius={topRadius} bottomRadius={bottomRadius} />
+      ) : (
+        <ColourBand accent={accent} height={height} topRadius={topRadius} bottomRadius={bottomRadius} />
+      )}
 
       <mesh castShadow>
         <latheGeometry args={[lidPoints, latheSegments]} />
