@@ -1,29 +1,32 @@
 import { Suspense, useEffect, useRef, useState } from 'react'
 import { Canvas } from '@react-three/fiber'
-import type { BucketSize } from '../../content'
-import { bucketProfiles, millimetre } from '../constants'
+import type { ProductForm, ProfileKey } from '../../content'
+import { bucketProfiles, millimetre, sackProfile } from '../constants'
 import { OrbitRig } from '../OrbitRig'
-import { PaintBucket } from '../PaintBucket'
+import { ProductModel } from '../ProductModel'
 import { idleResumeMs, stageSettings } from './constant'
 import { RoomEnvironments } from './RoomEnvironments'
 import { RoomStageTokens } from './tokens'
 
 type RoomStageProps = {
-  size: BucketSize
+  form: ProductForm
+  profile: ProfileKey
   accent: string
   label: string | null
   labelOffset: number
   viewScale: number
   autoRotate: boolean
-  spin: number
+  allowZoom: boolean
+  spinSpeed: number
   rooms: string[]
   activeRoom: number
 }
 
-export const RoomStage = ({ size, accent, label, labelOffset, viewScale, autoRotate, spin, rooms, activeRoom }: RoomStageProps) => {
+export const RoomStage = ({ form, profile, accent, label, labelOffset, viewScale, autoRotate, allowZoom, spinSpeed, rooms, activeRoom }: RoomStageProps) => {
   const [isRotating, setIsRotating] = useState(autoRotate)
   const resumeTimer = useRef<number | undefined>(undefined)
-  const height = bucketProfiles[size].height * millimetre
+  const height =
+    (form === 'sack' ? sackProfile.height : bucketProfiles[profile as Exclude<ProfileKey, 'sack'>].height) * millimetre
   const frame = 1 / Math.max(viewScale, 0.1)
   const orbit = height * stageSettings.distanceFactor * frame * 0.7
 
@@ -41,7 +44,7 @@ export const RoomStage = ({ size, accent, label, labelOffset, viewScale, autoRot
   }
 
   return (
-    <div {...RoomStageTokens.root} onPointerEnter={pauseRotation} onPointerLeave={resumeWhenIdle}>
+    <div {...RoomStageTokens.root}>
       <Canvas
         dpr={stageSettings.dpr}
         gl={{ preserveDrawingBuffer: true }}
@@ -54,10 +57,19 @@ export const RoomStage = ({ size, accent, label, labelOffset, viewScale, autoRot
       >
         <Suspense fallback={null}>
           <RoomEnvironments rooms={rooms} activeRoom={activeRoom} />
-          <PaintBucket size={size} accent={accent} label={label} labelOffset={labelOffset} spin={spin} />
+          <ProductModel
+            form={form}
+            profile={profile}
+            accent={accent}
+            label={label}
+            labelOffset={labelOffset}
+            spinSpeed={isRotating ? spinSpeed : 0}
+          />
         </Suspense>
         <OrbitRig
           target={[0, height * stageSettings.targetHeightFactor, 0]}
+          distance={Math.hypot(orbit, height * stageSettings.eyeHeightFactor * frame - height * stageSettings.targetHeightFactor, orbit)}
+          allowZoom={allowZoom}
           autoRotate={isRotating}
           onInteract={pauseRotation}
           onSettle={resumeWhenIdle}

@@ -1,2 +1,2 @@
+export { useProductTransition } from './useProductTransition'
 export { useSceneAutoplay } from './useSceneAutoplay'
-export { useScrollProgress } from './useScrollProgress'

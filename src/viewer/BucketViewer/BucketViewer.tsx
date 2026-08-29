@@ -1,5 +1,5 @@
 import { lazy, Suspense } from 'react'
-import type { BucketSize, Language } from '../../content'
+import type { Language, ProductForm, ProfileKey } from '../../content'
 import { defaultRooms } from '../RoomStage/constant'
 import { ViewerPoster } from '../ViewerPoster'
 import { viewerHint } from './constant'
@@ -9,7 +9,8 @@ import { BucketViewerTokens } from './tokens'
 const RoomStage = lazy(() => import('../RoomStage').then((module) => ({ default: module.RoomStage })))
 
 type BucketViewerProps = {
-  size: BucketSize
+  form: ProductForm
+  profile: ProfileKey
   accent: string
   label?: string | null
   labelOffset?: number
@@ -18,14 +19,16 @@ type BucketViewerProps = {
   language: Language
   viewScale?: number
   autoRotate?: boolean
-  spin?: number
+  allowZoom?: boolean
+  spinSpeed?: number
   showHint?: boolean
   rooms?: string[]
   activeRoom?: number
 }
 
 export const BucketViewer = ({
-  size,
+  form,
+  profile,
   accent,
   label = null,
   labelOffset = 0,
@@ -34,7 +37,8 @@ export const BucketViewer = ({
   language,
   viewScale = 1,
   autoRotate = true,
-  spin = 0,
+  allowZoom = false,
+  spinSpeed = 0,
   showHint = true,
   rooms = defaultRooms,
   activeRoom = 0
@@ -48,13 +52,15 @@ export const BucketViewer = ({
         <Suspense fallback={null}>
           <div {...BucketViewerTokens.stage}>
             <RoomStage
-              size={size}
+              form={form}
+              profile={profile}
               accent={accent}
               label={label}
               labelOffset={labelOffset}
               viewScale={viewScale}
               autoRotate={autoRotate}
-              spin={spin}
+              allowZoom={allowZoom}
+              spinSpeed={spinSpeed}
               rooms={rooms}
               activeRoom={activeRoom}
             />

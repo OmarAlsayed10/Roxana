@@ -6,9 +6,9 @@ export type Language = 'en' | 'ar'
 export type BilingualText = { en: string; ar: string }
 
 export type ProductFamily = 'lg' | 'top' | 'gold' | 'exo' | 'putty' | 'glue'
-export type ProductForm = 'bucket' | 'sack'
+export type ProductForm = 'bucket' | 'tin' | 'sack'
 export type ProductUse = 'interior' | 'exterior' | 'both'
-export type BucketSize = '2.5L' | '3kg' | '9L' | '13kg'
+export type ProfileKey = 'pail-jumbo' | 'pail-small' | 'tin-sm' | 'tin-lg' | 'sack'
 
 export type Product = {
   slug: string
@@ -20,7 +20,8 @@ export type Product = {
   finish: BilingualText
   label: string | null
   labelOffset: number
-  sizes: BucketSize[]
+  packs: string[]
+  profile: ProfileKey
   viewScale: number
   room: number
   specs: {

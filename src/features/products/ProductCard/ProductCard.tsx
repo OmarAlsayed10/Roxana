@@ -38,7 +38,7 @@ export const ProductCard = ({ product, language }: ProductCardProps) => {
         </div>
         <h3 {...ProductCardTokens.name}>{product.name[language]}</h3>
         <p {...ProductCardTokens.finish}>{product.finish[language]}</p>
-        <p {...ProductCardTokens.sizes}>{product.sizes.join(' · ')}</p>
+        <p {...ProductCardTokens.sizes}>{product.packs.join(' · ')}</p>
       </div>
     </Link>
   )

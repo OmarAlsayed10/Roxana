@@ -15,9 +15,11 @@
     },
     "label": "labels/lg-8000.webp",
     "labelOffset": 0.375,
-    "sizes": [
-      "2.5L"
+    "packs": [
+      "15 kg",
+      "10 kg"
     ],
+    "profile": "pail-jumbo",
     "viewScale": 1.0,
     "room": 0,
     "specs": {
@@ -81,9 +83,11 @@
     },
     "label": "labels/lg-800.webp",
     "labelOffset": 0.375,
-    "sizes": [
-      "9L"
+    "packs": [
+      "15 kg",
+      "10 kg"
     ],
+    "profile": "pail-jumbo",
     "viewScale": 1.2,
     "room": 1,
     "specs": {
@@ -143,9 +147,11 @@
     },
     "label": "labels/gold-600.webp",
     "labelOffset": 0.375,
-    "sizes": [
-      "9L"
+    "packs": [
+      "15 kg",
+      "10 kg"
     ],
+    "profile": "pail-jumbo",
     "viewScale": 1.2,
     "room": 2,
     "specs": {
@@ -205,9 +211,11 @@
     },
     "label": "labels/exo-900.webp",
     "labelOffset": 0.375,
-    "sizes": [
-      "9L"
+    "packs": [
+      "15 kg",
+      "10 kg"
     ],
+    "profile": "pail-jumbo",
     "viewScale": 1.2,
     "room": 0,
     "specs": {
@@ -267,9 +275,11 @@
     },
     "label": "labels/top-plastic-turkish.webp",
     "labelOffset": 0.045,
-    "sizes": [
-      "13kg"
+    "packs": [
+      "15 kg",
+      "10 kg"
     ],
+    "profile": "pail-jumbo",
     "viewScale": 1.0,
     "room": 1,
     "specs": {
@@ -333,9 +343,11 @@
     },
     "label": "labels/lg-water-sealer.webp",
     "labelOffset": 0.375,
-    "sizes": [
-      "3kg"
+    "packs": [
+      "15 kg",
+      "10 kg"
     ],
+    "profile": "pail-jumbo",
     "viewScale": 1.0,
     "room": 2,
     "specs": {
@@ -395,9 +407,11 @@
     },
     "label": "labels/top-sealer-turkish.webp",
     "labelOffset": 0.045,
-    "sizes": [
-      "3kg"
+    "packs": [
+      "15 kg",
+      "10 kg"
     ],
+    "profile": "pail-jumbo",
     "viewScale": 1.2,
     "room": 0,
     "specs": {
@@ -438,6 +452,320 @@
       {
         "en": "Stir the pack well before use and reseal after finishing",
         "ar": "يجب تقليب محتويات العبوة جيداً قبل الاستخدام وغلق العبوة جيداً بعد الانتهاء"
+      }
+    ]
+  },
+  {
+    "slug": "lg-primer",
+    "name": {
+      "en": "LG Primer",
+      "ar": "ال جى برايمر"
+    },
+    "family": "lg",
+    "form": "tin",
+    "code": "primer",
+    "use": "both",
+    "finish": {
+      "en": "Metal primer",
+      "ar": "بادئ دهان للحديد"
+    },
+    "label": "labels/lg-primer.webp",
+    "labelOffset": 0.375,
+    "packs": [
+      "0.45 kg",
+      "3 kg"
+    ],
+    "profile": "tin-lg",
+    "viewScale": 1.0,
+    "room": 0,
+    "specs": {
+      "coverage": {
+        "en": "The kilogram covers 6 to 8 m² at 40–45 micron thickness",
+        "ar": "يغطى الكيلو جرام من ٦ : ٨ متر مربع بسمك ٤٠ : ٤٥ ميكرون"
+      },
+      "thinning": {
+        "en": "Apply by roller, brush or spray gun",
+        "ar": "يستخدم بواسطة الرولة أو الفرشاة أو مسدس الرش"
+      },
+      "dryTime": {
+        "en": "Surface dry within 45 minutes",
+        "ar": "يجف سطحياً خلال ٤٥ دقيقة"
+      },
+      "recoat": {
+        "en": "Fully dry within 12 hours, ready to repaint",
+        "ar": "يجف كلياً خلال ١٢ ساعة وذلك لإعادة الدهان"
+      },
+      "shelfLife": {
+        "en": "Two years from the production date, at 25°C and 65% humidity",
+        "ar": "عامان من تاريخ الإنتاج المدون على العبوة عند الظروف القياسية ٢٥ درجة و٦٥٪ رطوبة"
+      }
+    },
+    "description": {
+      "en": "LG Primer is an undercoat used as a base for iron. For interior and exterior use on metal surfaces.",
+      "ar": "إل جى برايمر بادئ دهان يستخدم كبطانة للحديد. للإستخدام فى الداخل والخارج على الأسطح الحديدية."
+    },
+    "features": [
+      {
+        "en": "Underlay for iron and metal surfaces",
+        "ar": "بطانة للأسطح الحديدية والمعدنية"
+      },
+      {
+        "en": "Interior and exterior use",
+        "ar": "للإستخدام فى الداخل والخارج"
+      },
+      {
+        "en": "Apply by roller, brush or spray gun",
+        "ar": "يستخدم بالرولة أو الفرشاة أو مسدس الرش"
+      }
+    ]
+  },
+  {
+    "slug": "lg-100",
+    "name": {
+      "en": "LG 100",
+      "ar": "ال جى 100"
+    },
+    "family": "lg",
+    "form": "tin",
+    "code": "100",
+    "use": "both",
+    "finish": {
+      "en": "Matt synthetic",
+      "ar": "سنثيتيك مط"
+    },
+    "label": "labels/lg-100.webp",
+    "labelOffset": 0.375,
+    "packs": [
+      "0.75 kg",
+      "3 kg",
+      "5 kg"
+    ],
+    "profile": "tin-sm",
+    "viewScale": 1.3,
+    "room": 1,
+    "specs": {
+      "coverage": {
+        "en": "8 to 10 m² per kg per coat",
+        "ar": "من ٨ : ١٠ متر مربع / كجم للوجه الواحد"
+      },
+      "thinning": {
+        "en": "Dilute with thinner or gasoline",
+        "ar": "يخفف بالثنر أو النفط"
+      },
+      "dryTime": {
+        "en": "Surface dry in no more than 30 minutes, hard dry within 3 hours",
+        "ar": "زمن الجفاف السطحى لا يزيد عن ٣٠ دقيقة، وجفاف الصلب لا يزيد عن ٣ ساعات"
+      },
+      "recoat": {
+        "en": "Next coat after 8 hours. Solid content 75% ± 3% by weight",
+        "ar": "زمن دهان الوجه التالى ٨ ساعات. المحتوى الصلب بالوزن ٧٥٪ ± ٣٪"
+      },
+      "shelfLife": {
+        "en": "18 months in closed packaging",
+        "ar": "١٨ شهراً فى العبوات المغلقة"
+      }
+    },
+    "description": {
+      "en": "A high quality matt oil paint based on modified alkyd resins, giving a smooth level surface with excellent coverage and durability.",
+      "ar": "دهان زيتى نهائى مطفى عالى الجودة، يعتمد فى تصنيعه على الراتنجات الألكيدية المعدلة، يمنح السطح المظهر المستوى الناعم مع تغطية ومتانة ممتازة."
+    },
+    "features": [
+      {
+        "en": "Excellent smoothness and flatness",
+        "ar": "نعومة وتسوية فائقة"
+      },
+      {
+        "en": "Matt appearance with bright whiteness",
+        "ar": "مظهر مطفى مع خصائص الإخفاء والبياض الناصع"
+      },
+      {
+        "en": "Washable with water, easy stain removal",
+        "ar": "قابلية ممتازة للغسيل بالماء وسهولة إزالة البقع"
+      },
+      {
+        "en": "Lead free",
+        "ar": "خالى من الرصاص"
+      }
+    ]
+  },
+  {
+    "slug": "lg-200",
+    "name": {
+      "en": "LG 200",
+      "ar": "ال جى 200"
+    },
+    "family": "lg",
+    "form": "tin",
+    "code": "200",
+    "use": "both",
+    "finish": {
+      "en": "Glossy synthetic",
+      "ar": "سنثيتيك لامع"
+    },
+    "label": "labels/lg-200.webp",
+    "labelOffset": 0.375,
+    "packs": [
+      "0.2 kg",
+      "0.4 kg",
+      "0.75 kg",
+      "2 kg",
+      "4 kg"
+    ],
+    "profile": "tin-sm",
+    "viewScale": 1.3,
+    "room": 2,
+    "specs": {
+      "coverage": {
+        "en": "8 to 10 m² per kg per coat",
+        "ar": "من ٨ : ١٠ متر مربع / كجم للوجه الواحد"
+      },
+      "thinning": {
+        "en": "Dilute with thinner or gasoline",
+        "ar": "يخفف بالثنر أو النفط"
+      },
+      "dryTime": {
+        "en": "Surface dry in no more than 3 hours, hard dry within 12 hours",
+        "ar": "زمن الجفاف السطحى لا يزيد عن ٣ ساعات، وجفاف الصلب لا يزيد عن ١٢ ساعة"
+      },
+      "recoat": {
+        "en": "Next coat after 18 hours. Solid content 70% ± 3% by weight",
+        "ar": "زمن دهان الوجه التالى ١٨ ساعة. المحتوى الصلب بالوزن ٧٠٪ ± ٣٪"
+      },
+      "shelfLife": {
+        "en": "18 months in closed packaging",
+        "ar": "١٨ شهراً فى العبوات المغلقة"
+      }
+    },
+    "description": {
+      "en": "A high quality glossy oil paint based on modified alkyd resins, giving a smooth level surface with excellent coverage and durability.",
+      "ar": "دهان زيتى نهائى لامع عالى الجودة، يعتمد فى تصنيعه على الراتنجات الألكيدية المعدلة، يمنح السطح المظهر المستوى الناعم مع تغطية ومتانة ممتازة."
+    },
+    "features": [
+      {
+        "en": "Excellent gloss, high resistance to yellowing",
+        "ar": "لمعان ممتاز ومقاومة عالية للإصفرار"
+      },
+      {
+        "en": "Resists UV rays and weather conditions",
+        "ar": "مقاومة ممتازة للأشعة فوق البنفسجية والظروف الجوية"
+      },
+      {
+        "en": "Water and moisture resistant, scratch resistant",
+        "ar": "مقاوم للماء والرطوبة ومقاوم للخدش"
+      },
+      {
+        "en": "Lead free",
+        "ar": "خالى من الرصاص"
+      }
+    ]
+  },
+  {
+    "slug": "top-putty-100",
+    "name": {
+      "en": "Top Putty 100/100",
+      "ar": "معجون توب 100/100"
+    },
+    "family": "putty",
+    "form": "sack",
+    "code": "100/100",
+    "use": "both",
+    "finish": {
+      "en": "Wall putty",
+      "ar": "معجون للحوائط"
+    },
+    "label": "labels/top-putty-100.webp",
+    "labelOffset": 0.375,
+    "packs": [
+      "Sack"
+    ],
+    "profile": "sack",
+    "viewScale": 1.0,
+    "room": 0,
+    "specs": {
+      "coverage": {
+        "en": "",
+        "ar": ""
+      },
+      "thinning": {
+        "en": "",
+        "ar": ""
+      },
+      "dryTime": {
+        "en": "",
+        "ar": ""
+      },
+      "recoat": {
+        "en": "",
+        "ar": ""
+      },
+      "shelfLife": {
+        "en": "",
+        "ar": ""
+      }
+    },
+    "description": {
+      "en": "Top wall putty for interior and exterior surfaces.",
+      "ar": "معجون توب للحوائط، داخلى وخارجى."
+    },
+    "features": [
+      {
+        "en": "Interior and exterior",
+        "ar": "داخلى / خارجى"
+      }
+    ]
+  },
+  {
+    "slug": "top-putty-alfursan",
+    "name": {
+      "en": "Top Al Fursan Putty 50/50",
+      "ar": "معجون توب الفرسان 50/50"
+    },
+    "family": "putty",
+    "form": "sack",
+    "code": "50/50",
+    "use": "both",
+    "finish": {
+      "en": "Wall putty",
+      "ar": "معجون للحوائط"
+    },
+    "label": "labels/top-putty-alfursan.webp",
+    "labelOffset": 0.375,
+    "packs": [
+      "Sack"
+    ],
+    "profile": "sack",
+    "viewScale": 1.0,
+    "room": 1,
+    "specs": {
+      "coverage": {
+        "en": "",
+        "ar": ""
+      },
+      "thinning": {
+        "en": "",
+        "ar": ""
+      },
+      "dryTime": {
+        "en": "",
+        "ar": ""
+      },
+      "recoat": {
+        "en": "",
+        "ar": ""
+      },
+      "shelfLife": {
+        "en": "",
+        "ar": ""
+      }
+    },
+    "description": {
+      "en": "Top Al Fursan wall putty for interior and exterior surfaces.",
+      "ar": "معجون توب الفرسان للحوائط، داخلى وخارجى."
+    },
+    "features": [
+      {
+        "en": "Interior and exterior",
+        "ar": "داخلى / خارجى"
       }
     ]
   }

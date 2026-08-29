@@ -1,6 +1,6 @@
 export const HeroScenesTokens = {
-  root: { className: 'relative' },
-  sticky: { className: 'sticky top-16 h-[calc(100svh-4rem)] overflow-hidden' },
+  root: { className: 'relative h-[calc(100svh-4rem)]' },
+  sticky: { className: 'absolute inset-0 overflow-hidden' },
   viewer: { className: 'absolute inset-0' },
   scrim: { className: 'pointer-events-none absolute inset-0 bg-[linear-gradient(to_bottom,rgba(8,7,6,.5),rgba(8,7,6,.12)_34%,rgba(8,7,6,.8))]' },
   captions: { className: 'pointer-events-none absolute inset-0 px-[clamp(1.25rem,5vw,4.5rem)]' },
@@ -11,8 +11,10 @@ export const HeroScenesTokens = {
   title: { className: 'text-white' },
   body: { className: 'mt-4 text-sm text-white/80 sm:text-base' },
   action: { className: 'pointer-events-auto mt-7' },
-  rail: { className: 'pointer-events-none absolute inset-y-0 end-[clamp(1.25rem,5vw,4rem)] flex flex-col items-center justify-center gap-3' },
-  railDot: { className: 'h-9 w-0.5 rounded-full transition-colors duration-300' },
-  railDotIdle: { className: 'bg-white/25' },
-  railDotActive: { className: 'bg-white' }
+  rail: { className: 'absolute inset-x-0 top-4 z-10 flex max-w-full gap-2 overflow-x-auto px-4 py-2 [direction:ltr] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden sm:inset-x-auto sm:inset-y-0 sm:[direction:inherit] sm:end-[clamp(1.25rem,4vw,3.5rem)] sm:top-0 sm:flex-col sm:justify-center sm:overflow-visible sm:px-0 sm:py-0' },
+  railItem: { className: 'relative h-12 w-14 shrink-0 cursor-pointer overflow-hidden rounded-md border bg-black/20 shadow-lg transition-[border-color,opacity,transform] duration-300 ease-out focus-visible:z-10 sm:h-14 sm:w-16' },
+  railItemIdle: { className: 'border-white/30 opacity-65 hover:border-white/70 hover:opacity-100' },
+  railItemActive: { className: 'scale-105 border-white opacity-100 ring-2 ring-white/35' },
+  railNumber: { className: 'absolute inset-0 grid place-items-center text-[10px] font-bold text-white/70' },
+  railImage: { className: 'size-full object-cover' }
 }

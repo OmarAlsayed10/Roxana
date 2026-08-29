@@ -1,2 +1,2 @@
-export { bucketProfiles, millimetre } from './bucketProfiles'
-export type { BucketProfile } from './bucketProfiles'
+export { bucketProfiles, millimetre, sackProfile } from './bucketProfiles'
+export type { BucketProfile, SackProfile } from './bucketProfiles'

@@ -1,35 +1,35 @@
-import { useEffect, type CSSProperties } from 'react'
+import { useEffect } from 'react'
 import { productPath } from '../../../app'
 import { products, type Language } from '../../../content'
 import { assetPath, familyHex, familyLabel, posterPath } from '../../../shared/utils'
 import { Button, DisplayHeading } from '../../../UI'
 import { BucketViewer, roomFiles } from '../../../viewer'
-import { activeSceneIndex, sceneCta, sceneProgress, turnsPerScene, viewportsPerScene } from './constant'
-import { useSceneAutoplay, useScrollProgress } from './hooks'
+import { sceneCta, sceneJumpLabel } from './constant'
+import { useProductTransition, useSceneAutoplay } from './hooks'
 import { HeroScenesTokens } from './tokens'
 
 const sceneNumber = (index: number) => String(index + 1).padStart(2, '0')
 
-const productLabels = products.flatMap((product) => product.label ? [assetPath(product.label)] : [])
+const productLabels = products.flatMap((product) => (product.label ? [assetPath(product.label)] : []))
 
 export const HeroScenes = ({ language }: { language: Language }) => {
-  const { sectionRef, progress } = useScrollProgress()
+  const { activeIndex, selectScene } = useSceneAutoplay(products.length)
+  const { displayedIndex, spinSpeed } = useProductTransition(activeIndex)
+  const active = products[displayedIndex]
 
   useEffect(() => {
-    void import('../../../viewer/RoomStage').then(({ preloadRoomStageAssets }) => preloadRoomStageAssets(productLabels, roomFiles))
+    void import('../../../viewer/RoomStage').then(({ preloadRoomStageAssets }) =>
+      preloadRoomStageAssets(productLabels, roomFiles)
+    )
   }, [])
-  const activeIndex = activeSceneIndex(progress, products.length)
-  useSceneAutoplay({ sectionRef, count: products.length, activeIndex })
-
-  const active = products[activeIndex]
-  const sectionStyle = { height: `${products.length * viewportsPerScene * 100}svh` } as CSSProperties
 
   return (
-    <section ref={sectionRef} {...HeroScenesTokens.root} style={sectionStyle}>
+    <section {...HeroScenesTokens.root}>
       <div {...HeroScenesTokens.sticky}>
         <div {...HeroScenesTokens.viewer}>
           <BucketViewer
-            size={active.sizes[0]}
+            form={active.form}
+            profile={active.profile}
             accent={familyHex[active.family]}
             label={active.label ? assetPath(active.label) : null}
             labelOffset={active.labelOffset}
@@ -37,7 +37,8 @@ export const HeroScenes = ({ language }: { language: Language }) => {
             posterAlt={active.name[language]}
             language={language}
             viewScale={active.viewScale}
-            spin={sceneProgress(progress, products.length, activeIndex) * Math.PI * 2 * turnsPerScene}
+            allowZoom
+            spinSpeed={spinSpeed}
             showHint={false}
             rooms={roomFiles}
             activeRoom={active.room}
@@ -48,7 +49,7 @@ export const HeroScenes = ({ language }: { language: Language }) => {
           {products.map((product, index) => (
             <article
               key={product.slug}
-              className={`${HeroScenesTokens.caption.className} ${index === activeIndex ? HeroScenesTokens.captionActive.className : HeroScenesTokens.captionIdle.className}`}
+              className={`${HeroScenesTokens.caption.className} ${index === displayedIndex ? HeroScenesTokens.captionActive.className : HeroScenesTokens.captionIdle.className}`}
             >
               <p {...HeroScenesTokens.eyebrow}>
                 {sceneNumber(index)} — {familyLabel[product.family][language]}
@@ -63,14 +64,21 @@ export const HeroScenes = ({ language }: { language: Language }) => {
             </article>
           ))}
         </div>
-        <div {...HeroScenesTokens.rail}>
+        <nav {...HeroScenesTokens.rail} aria-label={sceneJumpLabel[language]}>
           {products.map((product, index) => (
-            <span
+            <button
               key={product.slug}
-              className={`${HeroScenesTokens.railDot.className} ${index === activeIndex ? HeroScenesTokens.railDotActive.className : HeroScenesTokens.railDotIdle.className}`}
-            />
+              type="button"
+              aria-label={`${sceneJumpLabel[language]}: ${product.name[language]}`}
+              aria-current={index === activeIndex ? 'true' : undefined}
+              onClick={() => selectScene(index)}
+              className={`${HeroScenesTokens.railItem.className} ${index === activeIndex ? HeroScenesTokens.railItemActive.className : HeroScenesTokens.railItemIdle.className}`}
+            >
+              <span {...HeroScenesTokens.railNumber}>{sceneNumber(index)}</span>
+              <img src={posterPath(product.slug)} alt="" decoding="async" {...HeroScenesTokens.railImage} />
+            </button>
           ))}
-        </div>
+        </nav>
       </div>
     </section>
   )

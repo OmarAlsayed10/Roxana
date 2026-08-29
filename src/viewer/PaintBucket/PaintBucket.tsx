@@ -1,6 +1,6 @@
 import { useMemo } from 'react'
 import { DoubleSide } from 'three'
-import type { BucketSize } from '../../content'
+import type { ProfileKey } from '../../content'
 import { bucketProfiles } from '../constants'
 import { ColourBand } from './ColourBand'
 import { bodyMaterial, handleMaterial, handleTubeFactor, latheSegments, lidMaterial } from './constant'
@@ -8,28 +8,27 @@ import { LabelBand } from './LabelBand'
 import { bucketMetrics, bucketProfilePoints, lidProfilePoints } from './utils'
 
 type PaintBucketProps = {
-  size: BucketSize
+  profile: Exclude<ProfileKey, 'sack'>
   accent: string
   label: string | null
   labelOffset: number
-  spin: number
 }
 
-export const PaintBucket = ({ size, accent, label, labelOffset, spin }: PaintBucketProps) => {
-  const profile = bucketProfiles[size]
+export const PaintBucket = ({ profile, accent, label, labelOffset }: PaintBucketProps) => {
+  const dimensions = bucketProfiles[profile]
   const { bodyPoints, lidPoints, metrics } = useMemo(
     () => ({
-      bodyPoints: bucketProfilePoints(profile),
-      lidPoints: lidProfilePoints(profile),
-      metrics: bucketMetrics(profile)
+      bodyPoints: bucketProfilePoints(dimensions),
+      lidPoints: lidProfilePoints(dimensions),
+      metrics: bucketMetrics(dimensions)
     }),
-    [profile]
+    [dimensions]
   )
 
   const { height, topRadius, bottomRadius } = metrics
 
   return (
-    <group rotation={[0, spin, 0]}>
+    <group>
       <mesh castShadow receiveShadow>
         <latheGeometry args={[bodyPoints, latheSegments]} />
         <meshPhysicalMaterial {...bodyMaterial} side={DoubleSide} />

@@ -44,7 +44,8 @@ export const PosterStudio = () => {
         {product && (
           <BucketViewer
             key={product.slug}
-            size={product.sizes[0]}
+            form={product.form}
+            profile={product.profile}
             accent={familyHex[product.family]}
             label={product.label ? assetPath(product.label) : null}
             labelOffset={product.labelOffset}

@@ -13,20 +13,22 @@ export const ProductGallery = ({ product, language }: ProductGalleryProps) => (
   <div {...ProductGalleryTokens.root}>
     <div {...ProductGalleryTokens.stage}>
       <BucketViewer
-        size={product.sizes[0]}
+        form={product.form}
+        profile={product.profile}
         accent={familyHex[product.family]}
         label={product.label ? assetPath(product.label) : null}
-            labelOffset={product.labelOffset}
+        labelOffset={product.labelOffset}
         poster={posterPath(product.slug)}
         posterAlt={product.name[language]}
         language={language}
         viewScale={product.viewScale}
+        allowZoom
         rooms={[roomFiles[product.room] ?? roomFiles[0]]}
       />
     </div>
     <div {...ProductGalleryTokens.bar}>
       <span {...ProductGalleryTokens.barLabel}>{sizeLabel[language]}</span>
-      <span {...ProductGalleryTokens.sizes}>{product.sizes.join(' · ')}</span>
+      <span {...ProductGalleryTokens.sizes}>{product.packs.join(' · ')}</span>
     </div>
   </div>
 )
