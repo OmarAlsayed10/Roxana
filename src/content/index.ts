@@ -52,8 +52,8 @@ export type Company = {
 export type Contact = {
   headline: BilingualText
   body: BilingualText
-  phone: string
-  whatsapp: string
+  phones: string[]
+  whatsapp: string[]
   email: string
   address: BilingualText
   hours: BilingualText
