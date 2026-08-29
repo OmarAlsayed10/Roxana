@@ -2,6 +2,7 @@ import { useMemo } from 'react'
 import { DoubleSide } from 'three'
 import type { ProfileKey } from '../../content'
 import { bucketProfiles } from '../constants'
+import { FaceCamera } from '../ProductModel/FaceCamera'
 import { ColourBand } from './ColourBand'
 import { bodyMaterial, handleMaterial, handleTubeFactor, latheSegments, lidMaterial } from './constant'
 import { LabelBand } from './LabelBand'
@@ -45,10 +46,12 @@ export const PaintBucket = ({ profile, accent, label, labelOffset }: PaintBucket
         <meshPhysicalMaterial {...lidMaterial} side={DoubleSide} />
       </mesh>
 
-      <mesh position={[0, height * 0.97, 0]}>
-        <torusGeometry args={[topRadius * 0.99, height * handleTubeFactor, 12, 48, Math.PI]} />
-        <meshStandardMaterial {...handleMaterial} />
-      </mesh>
+      <FaceCamera>
+        <mesh position={[0, height * 0.97, 0]}>
+          <torusGeometry args={[topRadius * 0.99, height * handleTubeFactor, 12, 48, Math.PI]} />
+          <meshStandardMaterial {...handleMaterial} />
+        </mesh>
+      </FaceCamera>
     </group>
   )
 }

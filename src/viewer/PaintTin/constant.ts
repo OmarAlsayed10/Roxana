@@ -13,9 +13,9 @@ export const shellMaterial = {
 }
 
 export const bailMaterial = {
-  color: '#3f4145',
-  roughness: 0.3,
-  metalness: 0.95
+  color: '#c9ccd2',
+  roughness: 0.24,
+  metalness: 0.96
 }
 
 export const labelMaterial = {

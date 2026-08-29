@@ -2,6 +2,7 @@ import { useMemo } from 'react'
 import { DoubleSide } from 'three'
 import type { ProfileKey } from '../../content'
 import { bucketProfiles } from '../constants'
+import { FaceCamera } from '../ProductModel/FaceCamera'
 import { bailMaterial, bailRadiusFactor, bailTubeFactor, shellMaterial, tinSegments } from './constant'
 import { TinLabel } from './TinLabel'
 import { tinMetrics, tinProfilePoints } from './utils'
@@ -32,17 +33,19 @@ export const PaintTin = ({ profile, accent, label, labelOffset }: PaintTinProps)
 
       <TinLabel url={label} accent={accent} offset={labelOffset} radius={radius} height={height} crimp={crimp} />
 
-      {[-1, 1].map((side) => (
-        <mesh key={side} position={[side * radius * 0.99, bailY, 0]} castShadow>
-          <sphereGeometry args={[height * bailTubeFactor * 1.7, 12, 12]} />
+      <FaceCamera>
+        {[-1, 1].map((side) => (
+          <mesh key={side} position={[side * radius * 0.99, bailY, 0]} castShadow>
+            <sphereGeometry args={[height * bailTubeFactor * 1.7, 12, 12]} />
+            <meshStandardMaterial {...bailMaterial} />
+          </mesh>
+        ))}
+  
+        <mesh position={[0, bailY, 0]}>
+          <torusGeometry args={[radius * bailRadiusFactor, height * bailTubeFactor, 12, 64, Math.PI]} />
           <meshStandardMaterial {...bailMaterial} />
         </mesh>
-      ))}
-
-      <mesh position={[0, bailY, 0]}>
-        <torusGeometry args={[radius * bailRadiusFactor, height * bailTubeFactor, 12, 64, Math.PI]} />
-        <meshStandardMaterial {...bailMaterial} />
-      </mesh>
+      </FaceCamera>
     </group>
   )
 }

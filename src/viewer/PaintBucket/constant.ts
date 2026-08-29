@@ -21,9 +21,9 @@ export const lidMaterial = {
 }
 
 export const handleMaterial = {
-  color: '#4a4a4d',
-  roughness: 0.34,
-  metalness: 0.92
+  color: '#f4f3f0',
+  roughness: 0.42,
+  metalness: 0.12
 }
 
 export const bandMaterial = {
